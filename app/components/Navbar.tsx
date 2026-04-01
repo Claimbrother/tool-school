@@ -39,8 +39,8 @@ const Navbar = () => {
   }, []);
   const navLinks = [
     { name: 'Home', href: '/', section: 'home' },               // Hauptseite
-    { name: 'Über mich', href: '/#about', section: 'about' },    // Ordner AboutMe
-    { name: 'Projekte', href: '/#projects', section: 'projects' },   // Ordner Projects
+    { name: 'Über mich', href: 'https://smart-mana-it.de/#about', section: 'about' },    // Ordner AboutMe
+    { name: 'Projekte', href: 'https://smart-mana-it.de/#projects', section: 'projects' },   // Ordner Projects
     { name: 'Schulungen', href: '/#classes', section: 'classes' },  // Ordner Classes
     { name: 'Kontakt', href: '/#contact', section: 'contact' },     // Ordner Contact
   ];
