@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Deep Space Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" /> <!-- Slate-950 -->
+      <stop offset="100%" stop-color="#0f172a" /> <!-- Slate-900 -->
+    </linearGradient>
+
+    <!-- Liquid Glow Effects (Teal & Indigo) -->
+    <radialGradient id="glowTeal" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="80%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glass Fill Gradient -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow for depth -->
+    <filter id="glass-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base (Squircle) -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Background Glows -->
+  <circle cx="160" cy="160" r="280" fill="url(#glowTeal)" />
+  <circle cx="380" cy="380" r="300" fill="url(#glowIndigo)" />
+
+  <!-- Glass "F" Logo Elements -->
+  <g filter="url(#glass-shadow)">
+    <!-- Main Vertical Stem -->
+    <rect x="170" y="120" width="56" height="272" rx="28" fill="url(#glass)" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+    <!-- Top Horizontal -->
+    <rect x="226" y="120" width="136" height="56" rx="28" fill="url(#glass)" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+    <!-- Middle Horizontal -->
+    <rect x="226" y="228" width="96" height="56" rx="28" fill="url(#glass)" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+  </g>
+
+  <!-- Highlight Overlay (Simuliert die Kantenbrechung bei Liquid Glass) -->
+  <g>
+    <rect x="172" y="122" width="52" height="268" rx="26" fill="transparent" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" />
+    <rect x="228" y="122" width="132" height="52" rx="26" fill="transparent" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" />
+    <rect x="228" y="230" width="92" height="52" rx="26" fill="transparent" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2" />
+  </g>
+</svg>
