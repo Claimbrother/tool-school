@@ -2,7 +2,7 @@ import { Mistral } from '@mistralai/mistralai';
 import { getKnowledgeContext } from '../data/lib/knowledgeLoader';
 // Zugriff auf die zentralen Daten
 import applicantData from '@/app/api/data/applicant.json';
-import projects from '@/app/api/data/projects.json';
+
 import courses from '@/app/api/data/courses/course-details.json';
 
 const apiKey = process.env.MISTRAL_API_KEY;

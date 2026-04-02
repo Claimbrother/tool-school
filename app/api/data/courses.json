@@ -22,5 +22,61 @@
     "level": "Mittel",
     "focus": ["Python", "Web Scraping", "LLM-Orchestrierung"],
     "usp": "Basierend auf der 'Fastep'-Technologie zur Erschließung verdeckter Datenmärkte."
+  },
+    {
+    "id": "workflow-ki-integration",
+    "title": "KI Integration",
+    "desc": "Lerne, wie du LLMs und KI-Tools nahtlos in deinen Workflow einbaust.",
+    "longDesc": "Dieser Kurs zeigt dir praxisnah, wie du Automatisierungen mit KI-Agents baust. Wir nutzen OpenAI, Anthropic und Open-Source Modelle für echte Use Cases.",
+    "icon": "Cpu"
+  },
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "desc": "Modernes Frontend mit Next.js, React und TailwindCSS meistern.",
+    "longDesc": "Von den Grundlagen bis zum fertigen Produkt. Wir fokussieren uns auf Performance, SEO und skalierbare Architekturen in der modernen Webentwicklung.",
+    "icon": "Code"
+  },
+  {
+    "id": "data-analytics",
+    "title": "Data Analytics",
+    "desc": "Mache Daten sichtbar und nutzbar für fundierte Entscheidungen.",
+    "longDesc": "Lerne Tools wie PowerBI, Tableau und Python-basierte Datenanalyse kennen, um aus unstrukturierten Daten wertvolle Business Insights zu generieren.",
+    "icon": "Database"
+  },
+  {
+    "id": "cloud-architecture",
+    "title": "Cloud Architecture",
+    "desc": "Skalierbare Infrastrukturen in AWS und Azure designen.",
+    "longDesc": "Verstehe Serverless, Container (Docker/Kubernetes) und CI/CD Pipelines, um moderne Applikationen sicher und hochverfügbar zu hosten.",
+    "icon": "Cloud"
+  },
+  {
+    "id": "cyber-security",
+    "title": "Cyber Security",
+    "desc": "Schütze deine Anwendungen vor modernen Bedrohungen.",
+    "longDesc": "Ein Deep-Dive in Penetration Testing, Verschlüsselungsstandards und Best Practices, um Unternehmensdaten effektiv zu sichern.",
+    "icon": "Shield"
+  },
+  {
+    "id": "agile-mastery",
+    "title": "Agile Mastery",
+    "desc": "Projektmanagement für schnelle und effiziente Teams.",
+    "longDesc": "Scrum, Kanban und moderne Führungsmethoden. Wie man Teams motiviert und Produkte iterativ und nutzerzentriert entwickelt.",
+    "icon": "Target"
+  },
+  {
+    "id": "growth-hacking",
+    "title": "Growth Hacking",
+    "desc": "Skaliere dein Produkt mit datengetriebenem Marketing.",
+    "longDesc": "Erlerne Techniken zur Nutzergewinnung, Conversion-Optimierung und Viralität. Tools und Taktiken für schnelles, messbares Wachstum.",
+    "icon": "Zap"
+  },
+  {
+    "id": "team-leadership",
+    "title": "Team Leadership",
+    "desc": "Führe Remote- und Hybrid-Teams zum Erfolg.",
+    "longDesc": "Soft Skills, Konfliktmanagement und Kommunikationsstrategien für die moderne, dezentrale Arbeitswelt.",
+    "icon": "Users"
   }
 ]
