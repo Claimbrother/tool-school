@@ -1,0 +1,100 @@
+{
+  "applicant": {
+    "personal_info": {
+      "name": "Falilou Holler",
+      "title": "Full-Stack Softwareentwickler & AI Specialist",
+      "location": "München, Deutschland",
+      "contact": {
+        "email": "Holler.Falilou@gmail.com",
+        "phone": "+491602446982",
+        "linkedin": "LinkedIn Profile"
+      },
+      "languages": [
+        { "language": "Deutsch", "level": "Muttersprache" },
+        { "language": "Englisch", "level": "Verhandlungssicher" }
+      ]
+    },
+    "professional_summary": {
+      "experience_years": 2,
+      "focus_areas": [
+        "Agentic AI Workflows",
+        "Full-Stack Web Development (React/Next.js)",
+        "Enterprise IT-Infrastruktur",
+        "Operative Leitung & Management"
+      ],
+      "core_value_proposition": "Kombination aus tiefem technischen Verständnis für moderne KI-Architekturen und langjähriger Erfahrung in der operativen Leitung und Qualitätssicherung in Enterprise-Umgebungen."
+    },
+    "technical_skill_matrix": {
+      "ai_engineering": {
+        "tools": ["Microsoft Foundry", "LangChain", "Agentic RAG", "Vektordatenbanken", "LLM-Integration"],
+        "capabilities": "Entwicklung komplexer Agenten-Systeme, Integration von Computer Vision und RAG-Systemen[cite: 7, 10, 73]."
+      },
+      "frontend_development": {
+        "technologies": ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+        "specialization": "Design responsiver Single Page Applications (SPAs) und Performance-Optimierung[cite: 10, 21]."
+      },
+      "backend_architecture": {
+        "technologies": ["Python", "Node.js", "Java", "GraphQL", "RESTful APIs"],
+        "database_cloud": ["PostgreSQL (Supabase)", "Azure", "MS Foundry", "Docker", "CI/CD"]
+      },
+      "methodology": ["Agile Scrum", "Code Reviews", "Troubleshooting", "Systemintegrität"]
+    },
+    "experience_deep_dive": [
+      {
+        "period": "2024 - 2026",
+        "role": "Softwareentwickler (Umschulung & Praxisphase)",
+        "organization": "GFN / IHK / DNZ-Networks",
+        "key_competencies_learned": [
+          "Architektur-Design: Aufbau robuster Backend-Logiken mit Python.",
+          "API-Ökonomie: Integration komplexer Drittanbieter-Schnittstellen via GraphQL und Supabase[cite: 23].",
+          "Team-Kollaboration: Professionelle Arbeit in zweiwöchigen Sprints und Sicherung der Code-Qualität durch Reviews[cite: 24]."
+        ]
+      },
+      {
+        "period": "2022 - 2023",
+        "role": "IT Operations & QA Spezialist",
+        "organization": "Wipro (Kunde: Daimler)",
+        "key_competencies_learned": [
+          "Enterprise-Standards: Einhaltung exakter Konfigurationsvorgaben in Hochsicherheitsumgebungen[cite: 31].",
+          "Automatisierung: Nutzung von Basic Scripting zur Fehlerbehebung und Prozessvalidierung[cite: 33].",
+          "Qualitätssicherung: Validierung komplexer Systemintegritäten vor dem Rollout[cite: 32]."
+        ]
+      },
+      {
+        "period": "2014 - 2017",
+        "role": "Filialleiter / Leiter Reparaturservice",
+        "organization": "Vodafone SAC",
+        "key_competencies_learned": [
+          "Strategische Führung: Steuerung von Vertriebsstrategien basierend auf Datenanalysen[cite: 47].",
+          "Krisenmanagement: Verantwortung für Disaster-Recovery-Prozesse und kritische Datensicherung[cite: 53].",
+          "Kommunikation: Stakeholder-Management und Verhandlungsführung auf Geschäftsebene[cite: 38, 44]."
+        ]
+      }
+    ],
+    "innovation_projects": [
+      {
+        "title": "CGI Hackathon - OBI Retail Innovation",
+        "stack": ["TypeScript", "Next.js", "Python", "RAG", "A* Algorithm"],
+        "delivered_value": [
+          "Problem-Solving: Entwicklung einer Indoor-Routing-Engine zur Optimierung der Customer Journey[cite: 74].",
+          "AI-Integration: Erstellung eines KI-Agenten für Smart Cross-Selling und Echtzeit-Bestandsprüfung via Visual Search[cite: 73, 75]."
+        ]
+      }
+    ],
+    "educational_credentials": {
+      "formal": [
+        "Fachinformatiker für Anwendungsentwicklung (IHK) [cite: 16]",
+        "Kaufmann im Einzelhandel [cite: 60]"
+      ],
+      "certifications": [
+        "EXIN Agile Scrum Foundation [cite: 25]",
+        "PCEP – Certified Entry-Level Python Programmer [cite: 25]"
+      ]
+    },
+    "knowledge_sharing_suitability": {
+      "technical_foundation": "Exzellent durch IHK-Abschluss und Fokus auf zukunftsweisende Agentic AI Workflows[cite: 7, 19].",
+      "leadership_experience": "Stark ausgeprägt durch mehrjährige Leitungserfahrung bei Vodafone und Management von Rollouts bei Daimler[cite: 8, 42, 49].",
+      "didactic_potential": "Nachgewiesene Fähigkeit, komplexe technische Konzepte (wie A*-Algorithmen oder RAG) in funktionale Prototypen zu übersetzen[cite: 69, 71]."
+    }
+  }
+}

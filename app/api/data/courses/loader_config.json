@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "data_sources": [
+    {
+      "path": "app/api/data/courses/knowledge-items.json",
+      "type": "json",
+      "priority": 1,
+      "required": true
+    },
+    {
+      "path": "app/api/data/courses/ki-integration.md",
+      "type": "markdown",
+      "priority": 2,
+      "required": false
+    },
+    {
+      "path": "app/api/data/courses/skills.md",
+      "type": "markdown",
+      "priority": 3,
+      "required": false
+    },
+    {
+      "path": "app/api/data/courses/soule.md",
+      "type": "markdown",
+      "priority": 4,
+      "required": false
+    },
+    {
+      "path": "app/api/data/courses/web-dev.json",
+      "type": "json",
+      "priority": 5,
+      "required": false
+    }
+  ],
+  "on_missing": "warn",
+  "on_parse_error": "skip",
+  "last_updated": null,
+  "notes": "Alle Pfade sind relativ zum Projektwurzelverzeichnis."
+}

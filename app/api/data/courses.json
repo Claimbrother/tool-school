@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ai-agents-foundry",
+    "title": "Agentic AI & Microsoft Foundry Masterclass",
+    "duration": "8 Wochen",
+    "level": "Fortgeschritten",
+    "focus": ["Microsoft Foundry", "Agentic RAG", "Python"],
+    "usp": "Lerne Agenten-Architekturen basierend auf realen Enterprise-Szenarien."
+  },
+  {
+    "id": "nextjs-fullstack",
+    "title": "Modern Fullstack mit Next.js & Supabase",
+    "duration": "6 Wochen",
+    "level": "Alle Levels",
+    "focus": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    "usp": "Bau skalierbarer Anwendungen mit Fokus auf Performance und Edge-Infrastruktur."
+  },
+  {
+    "id": "ai-automation-scraping",
+    "title": "AI-Driven Automation & Deep Scraping",
+    "duration": "4 Wochen",
+    "level": "Mittel",
+    "focus": ["Python", "Web Scraping", "LLM-Orchestrierung"],
+    "usp": "Basierend auf der 'Fastep'-Technologie zur Erschließung verdeckter Datenmärkte."
+  }
+]

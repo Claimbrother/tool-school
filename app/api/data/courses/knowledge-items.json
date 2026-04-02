@@ -1,0 +1,38 @@
+{
+  "$schema": "https://example.com/schemas/knowledge-items.schema.json",
+  "version": "1.0.0",
+  "required_fields": ["id", "type", "title", "summary", "content", "sources", "tags", "last_updated"],
+  "optional_fields": [],
+  "items": [
+    {
+      "id": "item-001",
+      "type": "course",
+      "title": "",
+      "summary": "",
+      "content": null,
+      "sources": [],
+      "tags": [],
+      "last_updated": null
+    },
+    {
+      "id": "item-002",
+      "type": "module",
+      "title": "",
+      "summary": "",
+      "content": null,
+      "sources": [],
+      "tags": [],
+      "last_updated": null
+    },
+    {
+      "id": "item-003",
+      "type": "faq",
+      "title": "",
+      "summary": "",
+      "content": null,
+      "sources": [],
+      "tags": [],
+      "last_updated": null
+    }
+  ]
+}

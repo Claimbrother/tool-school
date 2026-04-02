@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SaaS Startup",
+    "sector": "SaaS",
+    "need": "KI-gestützter Support-Assistent mit RAG",
+    "fit": "Sehr gut"
+  },
+  {
+    "name": "Retail Brand",
+    "sector": "E-Commerce",
+    "need": "Storefront-Performance & A/B Testing",
+    "fit": "Gut"
+  },
+  {
+    "name": "EdTech Platform",
+    "sector": "Education",
+    "need": "Interaktive Lernmodule + KI-Begleitung",
+    "fit": "Sehr gut"
+  }
+]

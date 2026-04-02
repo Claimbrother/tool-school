@@ -94,6 +94,7 @@ const AIConsultantModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =
   const [isMinimized, setIsMinimized] = useState(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const responseEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (responseEndRef.current) {
@@ -140,6 +141,13 @@ const AIConsultantModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =
     
     const aiResponse = await fetchMistralRecommendation(query);
     setResponse(aiResponse);
+
+    // Eingabe leeren und Fokus zurück auf das Feld
+    setQuery("");
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+
     setIsLoading(false);
   };
 
@@ -274,6 +282,7 @@ const AIConsultantModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =
             <input
               type="text"
               value={query}
+              ref={inputRef}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={isScrolling ? "Frage...?" : "z.B. Ich will Prozesse mit KI automatisieren..."}
               className={`flex-grow bg-slate-800 border border-slate-700 rounded-xl px-4 text-white placeholder:text-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all pr-12 ${

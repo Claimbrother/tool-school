@@ -1,0 +1,26 @@
+[
+  {
+    "name": "AI Knowledge Assistant",
+    "domain": "Support Automation",
+    "stack": ["Next.js", "TypeScript", "LangChain", "Chroma", "Mistral"],
+    "focus": "RAG, Retrieval-Pipelines, Antwort-Streaming, Tool-Aufrufe",
+    "impact": "Reduziert Support-Aufwände um 40% durch Self-Service",
+    "status": "Live"
+  },
+  {
+    "name": "Commerce Frontend Revamp",
+    "domain": "E-Commerce",
+    "stack": ["Next.js", "Tailwind", "Edge Runtime", "ISR"],
+    "focus": "Performance, SEO, Page Speed",
+    "impact": "+35% PageSpeed, +18% Conversion",
+    "status": "Live"
+  },
+  {
+    "name": "CI/CD Modernization",
+    "domain": "DevOps",
+    "stack": ["Docker", "GitHub Actions", "AWS"],
+    "focus": "Build-Pipelines, Tests, Deploy-Automatisierung",
+    "impact": "Release-Zeit von Tagen auf Stunden verkürzt",
+    "status": "Live"
+  }
+]
