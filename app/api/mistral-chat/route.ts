@@ -31,6 +31,8 @@ const buildSystemPrompt = (currentCourses: any[], courseKnowledge: string) => {
   const innovationProjects = app.innovation_projects
     .map((p) => `- ${p.title}: Stack [${formatList(p.stack)}] | Impact: ${formatList(p.delivered_value)}`)
     .join('\n');
+        const mentoringFilePath = path.join(process.cwd(), 'app', 'api', 'data', 'mentoring-philosophy.md');
+        const mentoringPhilosophy =  fs.readFile(mentoringFilePath, 'utf-8');
 
   const courseList = currentCourses.map((c: any) => `- ${c.title}: ${c.desc}`).join('\n');
 
@@ -50,7 +52,9 @@ ${courseList}
 
 ZUSÄTZLICHES WISSEN (Philosophie & MD-Dateien):
 ---
-${courseKnowledge}
+${courseKnowledge};
+${mentoringPhilosophy};
+${applicantData} Werden genutzt um empfehlungen zu personalisieren und auch Angebote über die gelisteten Mentoring angebote hinaus geht und begründe diese mit den bereitgestellten Informationen.
 ---
 
 DEINE AUFGABE:
@@ -70,7 +74,9 @@ Regeln:
 - Nutze die Mentoring-Philo, um die Antwort zu ergänzen.
 - Nur Informationen aus der Wissensbasis verwenden.
 - Dezente Emojis (max. 2).
-- Antworte nicht in Markdown.`;
+- Antworte nicht in Markdown.
+
+`;
 };
 
 export async function POST(request: Request) {
