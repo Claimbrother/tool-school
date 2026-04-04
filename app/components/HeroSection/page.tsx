@@ -25,19 +25,20 @@ const HeroSection = () => {
     }
   };
 
-  return (
+return (
     <section 
       id="home" 
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className="relative min-h-screen flex items-center justify-center overflow-visible pt-20 scroll-snap-align-center"
+      // HIER GEÄNDERT: z-[50] hinzugefügt, damit die HeroSection über dem z-10 Container der page.tsx liegt
+      className="relative z-[50] min-h-screen flex items-center justify-center overflow-visible pt-20 scroll-snap-align-center"
     >
       {/* Liquid Glass Magnifying Element */}
       <motion.div
         animate={{
-          x: mousePosition.x - 550, // Center the 200px orb
+          x: mousePosition.x - 550,
           y: mousePosition.y - 550,
           scale: isHovering ? 1 : 0,
           opacity: isHovering ? 1 : 0,
@@ -53,7 +54,7 @@ const HeroSection = () => {
         }}
       />
 
-      {/* ORBITING CARDS (Desktop) - Full Width Container */}
+      {/* ORBITING CARDS (Desktop) */}
       <div className="absolute inset-0 w-full h-full">
         <OrbitingGallery />
       </div>
@@ -64,52 +65,49 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 font-medium tracking-wide text-sm backdrop-blur-md">
-            PORTFOLIO FALILOU HOLLER 2026
-          </div> */}
-<div className="relative w-full mx-auto flex flex-col items-center justify-center z-10 pt-5 pb-5 min-h-[800px]">
-        
-        {/* CENTER TEXT */}
-        <div className="relative z-20 flex flex-col items-center text-center max-w-2xl px-6 pointer-events-none">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 drop-shadow-2xl">
-            Smart Mana <br />
-            Tool School
-          </h1>
-          
-          <p className="text-base md:text-lg text-slate-300 mb-10 leading-relaxed max-w-xl mx-auto drop-shadow-md bg-black/20 p-4 rounded-2xl backdrop-blur-sm md:bg-transparent md:p-0 md:backdrop-blur-none">
-            Entdecke die Zukunft der Schulungen mit Smart Mana Tool School – deinem Partner für innovative, praxisnahe und nachhaltige Weiterbildungslösungen. Unsere maßgeschneiderten Schulungen verbinden modernste Technologien mit bewährten Methoden.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto w-full">
-            <button className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-              Trainings <span className="ml-2">→</span>
-            </button>
-            <button className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
-              Kontakt ✉
-            </button>
-            {/* ✨ Neues LLM Feature: KI Berater Button */}
-            <button 
-              onClick={() => setIsAiModalOpen(true)}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-indigo-500/20 border border-indigo-500/50 text-indigo-300 font-medium hover:bg-indigo-500/30 hover:text-indigo-200 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all flex items-center justify-center gap-2 group"
-            >
-              <Sparkles size={18} className="group-hover:animate-pulse" />
-              KI fragen
-            </button>
+          <div className="relative w-full mx-auto flex flex-col items-center justify-center z-10 pt-5 pb-5 min-h-[800px]">
+            
+            {/* CENTER TEXT */}
+            <div className="relative z-20 flex flex-col items-center text-center max-w-2xl px-6 pointer-events-none">
+              <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 drop-shadow-2xl">
+                Smart Mana <br />
+                Tool School
+              </h1>
+              
+              <p className="text-base md:text-lg text-slate-300 mb-10 leading-relaxed max-w-xl mx-auto drop-shadow-md bg-black/20 p-4 rounded-2xl backdrop-blur-sm md:bg-transparent md:p-0 md:backdrop-blur-none">
+                Entdecke die Zukunft der Schulungen mit Smart Mana Tool School – deinem Partner für innovative, praxisnahe und nachhaltige Weiterbildungslösungen. Unsere maßgeschneiderten Schulungen verbinden modernste Technologien mit bewährten Methoden.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto w-full">
+                <button className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-slate-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                  Trainings <span className="ml-2">→</span>
+                </button>
+                <button className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+                  Kontakt ✉
+                </button>
+                <button 
+                  onClick={() => setIsAiModalOpen(true)}
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-indigo-500/20 border border-indigo-500/50 text-indigo-300 font-medium hover:bg-indigo-500/30 hover:text-indigo-200 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all flex items-center justify-center gap-2 group"
+                >
+                  <Sparkles size={18} className="group-hover:animate-pulse" />
+                  KI fragen
+                </button>
+              </div>
+            </div>
+
+            {/* SWIPE GALLERY (Mobile) */}
+            <MobileSwipeGallery />
+
           </div>
-        </div>
-
-        {/* SWIPE GALLERY (Mobile) */}
-        <MobileSwipeGallery />
-
+        </motion.div>
       </div>
 
-      {/* AI Modal Rendern */}
+      {/* HIER GEÄNDERT: AI Modal ganz nach unten verschoben (außerhalb der motion.div und des z-0 divs!) */}
       <AIConsultantModal 
         isOpen={isAiModalOpen} 
         onClose={() => setIsAiModalOpen(false)} 
       />
-        </motion.div>
-      </div>
+
     </section>
   );
 };
