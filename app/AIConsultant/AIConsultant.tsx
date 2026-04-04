@@ -33,7 +33,7 @@ const AIConsultantModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "assistant",
-      content: "Hallo! Beschreibe mir kurz deine berufliche Rolle oder was du gerne lernen möchtest. Ich finde den perfekten Kurs für dich."
+      content: "Hallo! Beschreibe mir kurz deine berufliche Rolle, Wissenstand oder was du gerne lernen möchtest. Umso mehr du mit mir Teilst um so besser kann ich dir helfen den perfekten Kurs für dich zu finden."
     }
   ]);
   const [isLoading, setIsLoading] = useState(false);

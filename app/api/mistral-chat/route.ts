@@ -1,7 +1,10 @@
 import { Mistral } from '@mistralai/mistralai';
-import { getKnowledgeContext } from '../data/lib/knowledgeLoader';
+import { promises as fs } from 'fs'; 
+import path from 'path';            
+
 import applicantData from '@/app/api/data/applicant.json';
 import courses from '@/app/api/data/courses/course-details.json';
+
 
 const apiKey = process.env.MISTRAL_API_KEY;
 
@@ -55,13 +58,19 @@ DEINE AUFGABE:
 2. Beratung: Empfiehl maximal 2 passende Kurse aus der Wissensbasis.
 3. Proof of Concept: Erwähne kurz, dass die Inhalte auf Falilous realer Projekterfahrung (z.B. Enterprise-Infrastruktur bei Daimler/Vodafone oder AI-Integration für OBI) basieren.
 4. Tonfall: Professionell, motivierend, "Build-to-Solve"-orientiert.
-5. Next Step: Schlage bei Interesse ein 15-minütiges Mentor-Matching vor.
+5. Next Step: Schlage bei Interesse ein 15-30 minütiges Mentor-Matching vor.
 
 Regeln:
 - Max. 3-5 Sätze.
 - Antworte auf Deutsch.
+- Antworte nur auf Basis der Wissensbasis.
+- Nutze die Chat-Historie, um den Kontext zu verstehen.
+- Nutze die Wissensbasis, um die Antwort zu generieren.
+- Nutze die Zusätzlichen Informationen, um die Antwort zu ergänzen.
+- Nutze die Mentoring-Philo, um die Antwort zu ergänzen.
 - Nur Informationen aus der Wissensbasis verwenden.
-- Dezente Emojis (max. 2).`;
+- Dezente Emojis (max. 2).
+- Antworte nicht in Markdown.`;
 };
 
 export async function POST(request: Request) {
@@ -74,11 +83,18 @@ export async function POST(request: Request) {
       return Response.json({ error: 'Invalid or missing messages array' }, { status: 400 });
     }
 
-    // Dynamisches Wissen laden
-    const courseKnowledge = await getKnowledgeContext();
+    // Lade Kurse und Mentoring-Wissen (MD-Datei) synchronus vor der Antwortgenerierung
+    const mentoringFilePath = path.join(process.cwd(), 'app', 'api', 'data', 'mentoring-philosophy.md');
+    let mentoringContent = "";
     
-    // Prompt bauen
-    const systemPrompt = buildSystemPrompt(courses, courseKnowledge);
+    try {
+      mentoringContent = await fs.readFile(mentoringFilePath, 'utf8');
+    } catch (err) {
+      console.warn("Konnte mentoring-philosophy.md nicht laden:", err);
+      mentoringContent = "Kein zusätzliches Mentoring-Wissen verfügbar."; 
+    }
+
+    const systemPrompt = buildSystemPrompt(courses, mentoringContent);
 
     // Chat-Historie vorbereiten (System-Prompt + User/Assistant Historie)
     const apiMessages = [

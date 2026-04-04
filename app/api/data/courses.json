@@ -1,82 +1,68 @@
 [
   {
-    "id": "ai-agents-foundry",
-    "title": "Agentic AI & Microsoft Foundry Masterclass",
-    "duration": "8 Wochen",
-    "level": "Fortgeschritten",
-    "focus": ["Microsoft Foundry", "Agentic RAG", "Python"],
-    "usp": "Lerne Agenten-Architekturen basierend auf realen Enterprise-Szenarien."
-  },
-  {
-    "id": "nextjs-fullstack",
-    "title": "Modern Fullstack mit Next.js & Supabase",
-    "duration": "6 Wochen",
-    "level": "Alle Levels",
-    "focus": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-    "usp": "Bau skalierbarer Anwendungen mit Fokus auf Performance und Edge-Infrastruktur."
-  },
-  {
-    "id": "ai-automation-scraping",
-    "title": "AI-Driven Automation & Deep Scraping",
-    "duration": "4 Wochen",
-    "level": "Mittel",
-    "focus": ["Python", "Web Scraping", "LLM-Orchestrierung"],
-    "usp": "Basierend auf der 'Fastep'-Technologie zur Erschließung verdeckter Datenmärkte."
-  },
-    {
-    "id": "workflow-ki-integration",
-    "title": "KI Integration",
-    "desc": "Lerne, wie du LLMs und KI-Tools nahtlos in deinen Workflow einbaust.",
-    "longDesc": "Dieser Kurs zeigt dir praxisnah, wie du Automatisierungen mit KI-Agents baust. Wir nutzen OpenAI, Anthropic und Open-Source Modelle für echte Use Cases.",
+    "id": "ki-alltag-beruf",
+    "title": "KI im Alltag & Beruf meistern",
+    "desc": "Künstliche Intelligenz (wie ChatGPT oder Gemini) ganz ohne Fachchinesisch verstehen und nutzen.",
+    "longDesc": "Haben Sie Sorge, beruflich oder privat den Anschluss zu verlieren? In diesem Training lernen Sie, KI als berechenbares mathematisches Werkzeug zu nutzen, um einen klaren Wettbewerbsvorteil zu erlangen oder den Alltag zu erleichtern. Mit viel Geduld und interaktiven Übungen direkt an Ihrem Gerät nehmen wir Ihnen jegliche Berührungsängste. Inklusive 30-Minuten-Kennenlerngespräch, um Sie exakt auf Ihrem Wissensstand abzuholen.",
+    "duration": "Individuell",
+    "level": "Einsteiger bis Mittel",
+    "focus": ["ChatGPT & Gemini", "Alltags-Automatisierung", "Berufliche Effizienz", "Wissensfilterung"],
+    "usp": "Komplexe KI-Themen extrem verständlich, empathisch und ohne elitäres IT-Gerede erklärt.",
     "icon": "Cpu"
   },
   {
-    "id": "web-development",
-    "title": "Web Development",
-    "desc": "Modernes Frontend mit Next.js, React und TailwindCSS meistern.",
-    "longDesc": "Von den Grundlagen bis zum fertigen Produkt. Wir fokussieren uns auf Performance, SEO und skalierbare Architekturen in der modernen Webentwicklung.",
-    "icon": "Code"
-  },
-  {
-    "id": "data-analytics",
-    "title": "Data Analytics",
-    "desc": "Mache Daten sichtbar und nutzbar für fundierte Entscheidungen.",
-    "longDesc": "Lerne Tools wie PowerBI, Tableau und Python-basierte Datenanalyse kennen, um aus unstrukturierten Daten wertvolle Business Insights zu generieren.",
-    "icon": "Database"
-  },
-  {
-    "id": "cloud-architecture",
-    "title": "Cloud Architecture",
-    "desc": "Skalierbare Infrastrukturen in AWS und Azure designen.",
-    "longDesc": "Verstehe Serverless, Container (Docker/Kubernetes) und CI/CD Pipelines, um moderne Applikationen sicher und hochverfügbar zu hosten.",
-    "icon": "Cloud"
-  },
-  {
-    "id": "cyber-security",
-    "title": "Cyber Security",
-    "desc": "Schütze deine Anwendungen vor modernen Bedrohungen.",
-    "longDesc": "Ein Deep-Dive in Penetration Testing, Verschlüsselungsstandards und Best Practices, um Unternehmensdaten effektiv zu sichern.",
+    "id": "sicher-im-internet",
+    "title": "Sicher & Selbstbewusst im Internet",
+    "desc": "Erkennen Sie Gefahren, schützen Sie Ihre Daten und navigieren Sie sicher durch das Netz.",
+    "longDesc": "Die schiere Masse an Informationen im digitalen Raum kann überfordern. Lernen Sie praxisnah und in Ihrem eigenen Tempo, wie Sie sich vor Identitätsdiebstahl schützen und Falschmeldungen erkennen. Ich erkläre Ihnen komplexe Sicherheitsthemen geduldig und genau auf Ihrer aktuellen Wissensgrundlage.",
+    "duration": "Individuell",
+    "level": "Einsteiger",
+    "focus": ["Datenschutz", "Cyber-Gefahren erkennen", "Sicheres Surfen", "Digitale Souveränität"],
+    "usp": "Schritt-für-Schritt-Begleitung ohne Zeitdruck, bis sich das Wissen wirklich gefestigt hat.",
     "icon": "Shield"
   },
   {
-    "id": "agile-mastery",
-    "title": "Agile Mastery",
-    "desc": "Projektmanagement für schnelle und effiziente Teams.",
-    "longDesc": "Scrum, Kanban und moderne Führungsmethoden. Wie man Teams motiviert und Produkte iterativ und nutzerzentriert entwickelt.",
-    "icon": "Target"
+    "id": "smartphone-apps",
+    "title": "Smartphone & Apps meistern",
+    "desc": "Vom Grund-Setup bis zu nützlichen Apps für Reisen, Gesundheit und Kommunikation.",
+    "longDesc": "Fühlen Sie sich im digitalen Dschungel der Apps manchmal verloren? Wir richten Ihr Smartphone optimal ein und üben gemeinsam nützliche Funktionen, die Ihren Alltag wirklich erleichtern. Vom ersten Wischen bis zur intuitiven Bedienung – alles Schritt für Schritt und absolut ohne Fachjargon.",
+    "duration": "Individuell",
+    "level": "Einsteiger",
+    "focus": ["Grundeinstellungen", "Kommunikation", "Reise- & Gesundheits-Apps", "Bedienungshilfen"],
+    "usp": "Lernen durch 'Gemeinsam Anwenden' statt trockener Theorie.",
+    "icon": "Smartphone"
   },
   {
-    "id": "growth-hacking",
-    "title": "Growth Hacking",
-    "desc": "Skaliere dein Produkt mit datengetriebenem Marketing.",
-    "longDesc": "Erlerne Techniken zur Nutzergewinnung, Conversion-Optimierung und Viralität. Tools und Taktiken für schnelles, messbares Wachstum.",
-    "icon": "Zap"
+    "id": "agentic-ai-b2b",
+    "title": "Agentic AI & RAG Integration",
+    "desc": "Skalierbare KI-Lösungen, Agentic Workflows und Automatisierungen für Unternehmen.",
+    "longDesc": "Basierend auf fundierter Praxis (wie der Entwicklung von OBI-PoCs) konzipiere und integriere ich maßgeschneiderte RAG-Systeme und KI-Agenten. So machen Sie Ihre unstrukturierten Unternehmensdaten effizient nutzbar und revolutionieren interne Prozesse sowie Kundeninteraktionen.",
+    "duration": "Projektabhängig",
+    "level": "Unternehmen (B2B)",
+    "focus": ["Python", "Microsoft Foundry", "Agentic RAG", "LLM-Orchestrierung"],
+    "usp": "Verbindung von fundiertem operativen Management-Wissen mit modernsten AI-Technologien.",
+    "icon": "Workflow"
+  },
+  {
+    "id": "modern-web-dev",
+    "title": "Modern Full-Stack Development",
+    "desc": "Entwicklung performanter Single Page Applications (SPAs) und robuster Backend-Architekturen.",
+    "longDesc": "Ich baue skalierbare, datengesteuerte Webanwendungen von der Konzeption bis zum fertigen Rollout. Spezialisiert auf modernes Frontend-Design und komplexe Backend-Logik, um nahtlose Nutzererlebnisse und schnelle Ladezeiten zu garantieren.",
+    "duration": "Projektabhängig",
+    "level": "Unternehmen (B2B)",
+    "focus": ["Next.js", "React", "TypeScript", "Node.js", "Supabase"],
+    "usp": "Agile Entwicklung (Scrum) und saubere Architektur von einem IHK-geprüften Entwickler.",
+    "icon": "Code"
   },
   {
     "id": "team-leadership",
-    "title": "Team Leadership",
+    "title": "Team Leadership & Management",
     "desc": "Führe Remote- und Hybrid-Teams zum Erfolg.",
-    "longDesc": "Soft Skills, Konfliktmanagement und Kommunikationsstrategien für die moderne, dezentrale Arbeitswelt.",
+    "longDesc": "Mit meiner langjährigen Erfahrung in der operativen Leitung und Technikberatung vermittle ich essenzielle Soft Skills, Konfliktmanagement und empathische Kommunikationsstrategien, die für die moderne, dezentrale Arbeitswelt unerlässlich sind.",
+    "duration": "Individuell",
+    "level": "Führungskräfte / Management",
+    "focus": ["Soft Skills", "Konfliktmanagement", "KPI-Erreichung", "Agiles Mindset"],
+    "usp": "Praxiserprobtes Management-Wissen gepaart mit tiefem Verständnis für technische Teams.",
     "icon": "Users"
   }
 ]
