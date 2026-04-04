@@ -46,11 +46,11 @@ const Navbar = () => {
   ];
 
 
-  return (
+return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
+      className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4"
     >
       <div className={`
         flex items-center gap-1 md:gap-4 px-6 py-3 rounded-full 
