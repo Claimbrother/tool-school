@@ -1,8 +1,7 @@
 "use client";
 
 import Navbar from "./components/Navbar";
-// Hinweis: In Next.js ist es besser, diese Dateien in "AboutMe.tsx" statt "page.tsx" 
-// umzubenennen, wenn sie keine eigenen URLs haben sollen, sondern nur UI-Komponenten sind.
+
 
 import HeroSection from "./components/HeroSection/page";
 import SchulungenSection from "./components/Classes/page";

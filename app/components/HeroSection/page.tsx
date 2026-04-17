@@ -1,11 +1,17 @@
 "use client";
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import AIConsultantModal
-from '@/app/AIConsultant/AIConsultant';
+
 import OrbitingGallery from '@/components/myShit/OrbitalGallery';
 import MobileSwipeGallery from '@/components/myShit/SwipeGalery';
 import { Sparkles } from "lucide-react";
+import dynamic from 'next/dynamic';
+
+// Lade das Modal dynamisch und deaktiviere SSR
+const AIConsultantModal = dynamic(
+  () => import('@/app/AIConsultant/AIConsultant'),
+  { ssr: false } 
+);
 
 
 
@@ -13,7 +19,6 @@ const HeroSection = () => {
   const containerRef = useRef<HTMLElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
-  const [isAiModalOpen, setIsAiModalOpen] = useState(false);
 
   const handleMouseMove = (e : React.MouseEvent<HTMLDivElement>) => {
     if (containerRef.current) {
@@ -22,6 +27,12 @@ const HeroSection = () => {
         x: e.clientX - rect.left,
         y: e.clientY - rect.top,
       });
+    }
+  };
+    const triggerAIChat = () => {
+    const chatButton = document.querySelector('.chat-window-toggle') as HTMLElement;
+    if (chatButton) {
+      chatButton.click();
     }
   };
 
@@ -86,7 +97,7 @@ return (
                   Kontakt ✉
                 </button>
                 <button 
-                  onClick={() => setIsAiModalOpen(true)}
+                  onClick={triggerAIChat}
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-indigo-500/20 border border-indigo-500/50 text-indigo-300 font-medium hover:bg-indigo-500/30 hover:text-indigo-200 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all flex items-center justify-center gap-2 group"
                 >
                   <Sparkles size={18} className="group-hover:animate-pulse" />
@@ -103,10 +114,7 @@ return (
       </div>
 
       {/* HIER GEÄNDERT: AI Modal ganz nach unten verschoben (außerhalb der motion.div und des z-0 divs!) */}
-      <AIConsultantModal 
-        isOpen={isAiModalOpen} 
-        onClose={() => setIsAiModalOpen(false)} 
-      />
+      <AIConsultantModal/>
 
     </section>
   );
