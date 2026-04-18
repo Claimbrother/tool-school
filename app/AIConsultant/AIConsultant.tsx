@@ -32,7 +32,7 @@ const AIConsultantModal = () => {
 	// 		inputPlaceholder: 'Type your question..',
 	// 	},
 	// },
-	enableStreaming: true,
+	enableStreaming: false,
     });
 
     // 3. Aufräumen, wenn die Komponente entfernt wird
