@@ -84,7 +84,7 @@ return (
             Home
           </a>
           <a 
-            href="#about" 
+            href="https://smart-mana-it.de/#about" 
             className={`px-3 py-2 text-sm transition-colors rounded-full ${
               activeSection === 'about'
                 ? 'text-white bg-blue-500/20 border border-blue-400/30'
@@ -94,7 +94,7 @@ return (
             About
           </a>
           <a 
-            href="#projects" 
+            href="https://smart-mana-it.de/#projects" 
             className={`px-3 py-2 text-sm transition-colors rounded-full ${ 
               activeSection === 'projects'
                 ? 'text-white bg-blue-500/20 border border-blue-400/30'
