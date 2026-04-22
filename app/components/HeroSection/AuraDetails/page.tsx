@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import React from 'react';
 import { AuraCourse, CurriculumItem } from '@/app/types';
 
@@ -102,7 +104,8 @@ const InstructorCard: React.FC = () => (
   </div>
 );
 
-export default function AuraDetails({ course }: { course: AuraCourse }) {
+export default function AuraDetails({ course }: { course?: AuraCourse }) {
+  if (!course) return null;
   return (
     <div className="space-y-6">
       <DetailHeroCard course={course} />
