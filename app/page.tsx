@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 
 
 import HeroSection from "./components/HeroSection/page";
-import SchulungenSection from "./components/Classes/page";
 import ContactSection from "./components/Contact/page";
 import Footer  from "./components/Footer/page";
 import TrainingCyclePath from "./components/TrainingCycle/page";
@@ -42,7 +41,6 @@ export default function Home() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
         <section id="classes" className="min-h-screen py-20">
-          <SchulungenSection />
           <TrainingCyclePath />
         </section>
 

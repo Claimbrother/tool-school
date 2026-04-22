@@ -40,7 +40,7 @@ const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
         
-        <GlassCard className="p-8 md:p-12">
+        <GlassCard className="p-8 md:p-12 bg-slate-950/60">
 
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let`s Connect</h2>
@@ -89,24 +89,7 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                {activeTab === 'coding' ? (
-                  // Coding Project Fields
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-300 ml-1">Budget</label>
-                      <select name='budget' className="w-full px-4 py-3 rounded-xl bg-slate-900/50 border border-white/10 text-slate-300 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all backdrop-blur-sm appearance-none">
-                        <option value="">Bitte wählen...</option>
-                        <option value="small">&lt; 5.000 €</option>
-                        <option value="medium">5.000 € - 15.000 €</option>
-                        <option value="large">&gt; 15.000 €</option>
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-slate-300 ml-1">Timeline</label>
-                      <input name='timeline' type="text" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all backdrop-blur-sm placeholder-slate-500" placeholder="z.B. Q3 2026" />
-                    </div>
-                  </div>
-                ) : (
+                {activeTab !== 'coding' ? (
                   // Schulung Fields
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
@@ -122,11 +105,11 @@ const ContactSection = () => {
                       <input name='phone' type="tel" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all backdrop-blur-sm placeholder-slate-500" placeholder="Für Rückrufe" />
                     </div>
                   </div>
-                )}
+                ) : null}
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-300 ml-1">Nachricht</label>
-                  <textarea name='message' rows={4} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all backdrop-blur-sm resize-none placeholder-slate-500" placeholder="Wie kann ich Sie unterstützen?"></textarea>
+                  <textarea name="message" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all backdrop-blur-sm placeholder-slate-500" placeholder="Ihre Nachricht..." rows={4}></textarea>
                 </div>
 
                 <motion.button type="submit"

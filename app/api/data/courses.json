@@ -1,68 +1,68 @@
 [
   {
-    "id": "ki-alltag-beruf",
-    "title": "KI im Alltag & Beruf meistern",
-    "desc": "Künstliche Intelligenz (wie ChatGPT oder Gemini) ganz ohne Fachchinesisch verstehen und nutzen.",
-    "longDesc": "Haben Sie Sorge, beruflich oder privat den Anschluss zu verlieren? In diesem Training lernen Sie, KI als berechenbares mathematisches Werkzeug zu nutzen, um einen klaren Wettbewerbsvorteil zu erlangen oder den Alltag zu erleichtern. Mit viel Geduld und interaktiven Übungen direkt an Ihrem Gerät nehmen wir Ihnen jegliche Berührungsängste. Inklusive 30-Minuten-Kennenlerngespräch, um Sie exakt auf Ihrem Wissensstand abzuholen.",
-    "duration": "Individuell",
-    "level": "Einsteiger bis Mittel",
-    "focus": ["ChatGPT & Gemini", "Alltags-Automatisierung", "Berufliche Effizienz", "Wissensfilterung"],
-    "usp": "Komplexe KI-Themen extrem verständlich, empathisch und ohne elitäres IT-Gerede erklärt.",
-    "icon": "Cpu"
+    "id": "course-101",
+    "number": "01",
+    "moduleCode": "MOD.AI // 101",
+    "theme": {
+      "color": "text-[#00f0ff]",
+      "bg": "bg-[#00f0ff]/10",
+      "border": "border-[#00f0ff]/20",
+      "glowBg": "from-purple-600/30 via-transparent to-[#00f0ff]/30",
+      "glowBorder": "from-purple-500/20 via-white/5 to-[#00f0ff]/30"
+    },
+    "title": "KI im Alltag verstehen",
+    "description": "Grundlagen von ChatGPT und Gemini für den sicheren Alltagseinsatz. Entmystifizierung generativer künstlicher Intelligenz. Lernen Sie, wie Sie moderne Sprachmodelle als effiziente Assistenten nutzen, Prompts präzise formulieren und die Ergebnisse kritisch bewerten.",
+    "format": "1:1 Session",
+    "duration": "120 Minuten",
+    "level": "Grundlagen",
+    "availability": "Sofort",
+    "curriculum": [
+      { "time": "0 - 30m", "title": "Die Mechanik hinter der KI", "description": "Verständliche Erklärung von LLMs, Training und Funktionsweise ohne technischen Jargon." },
+      { "time": "30 - 60m", "title": "Prompt Engineering Basics", "description": "Strukturierung effektiver Anweisungen. Wie Kontext, Rolle und Formatvorgaben die Ergebnisse drastisch verbessern." },
+      { "time": "60 - 90m", "title": "Use Cases & Hands-On", "description": "Gemeinsame Erstellung von Vorlagen für E-Mails, Textzusammenfassungen und kreatives Brainstorming." },
+      { "time": "90 - 120m", "title": "Sicherheit & Limitierungen", "description": "Halluzinationen erkennen, Datenschutzaspekte bei der Eingabe und kritische Quellenbewertung." }
+    ],
+    "outcomes": [
+      "Sichere Navigation in gängigen KI-Interfaces (ChatGPT, Gemini)",
+      "Fähigkeit, komplexe Aufgaben in iterative Prompts zu zerlegen",
+      "Verständnis für den sicheren Umgang mit sensiblen Daten",
+      "Erkennung von KI-generierten Falschinformationen",
+      "Einrichtung personalisierter System-Prompts"
+    ]
   },
   {
-    "id": "sicher-im-internet",
-    "title": "Sicher & Selbstbewusst im Internet",
-    "desc": "Erkennen Sie Gefahren, schützen Sie Ihre Daten und navigieren Sie sicher durch das Netz.",
-    "longDesc": "Die schiere Masse an Informationen im digitalen Raum kann überfordern. Lernen Sie praxisnah und in Ihrem eigenen Tempo, wie Sie sich vor Identitätsdiebstahl schützen und Falschmeldungen erkennen. Ich erkläre Ihnen komplexe Sicherheitsthemen geduldig und genau auf Ihrer aktuellen Wissensgrundlage.",
-    "duration": "Individuell",
-    "level": "Einsteiger",
-    "focus": ["Datenschutz", "Cyber-Gefahren erkennen", "Sicheres Surfen", "Digitale Souveränität"],
-    "usp": "Schritt-für-Schritt-Begleitung ohne Zeitdruck, bis sich das Wissen wirklich gefestigt hat.",
-    "icon": "Shield"
-  },
-  {
-    "id": "smartphone-apps",
-    "title": "Smartphone & Apps meistern",
-    "desc": "Vom Grund-Setup bis zu nützlichen Apps für Reisen, Gesundheit und Kommunikation.",
-    "longDesc": "Fühlen Sie sich im digitalen Dschungel der Apps manchmal verloren? Wir richten Ihr Smartphone optimal ein und üben gemeinsam nützliche Funktionen, die Ihren Alltag wirklich erleichtern. Vom ersten Wischen bis zur intuitiven Bedienung – alles Schritt für Schritt und absolut ohne Fachjargon.",
-    "duration": "Individuell",
-    "level": "Einsteiger",
-    "focus": ["Grundeinstellungen", "Kommunikation", "Reise- & Gesundheits-Apps", "Bedienungshilfen"],
-    "usp": "Lernen durch 'Gemeinsam Anwenden' statt trockener Theorie.",
-    "icon": "Smartphone"
-  },
-  {
-    "id": "agentic-ai-b2b",
-    "title": "Agentic AI & RAG Integration",
-    "desc": "Skalierbare KI-Lösungen, Agentic Workflows und Automatisierungen für Unternehmen.",
-    "longDesc": "Basierend auf fundierter Praxis (wie der Entwicklung von OBI-PoCs) konzipiere und integriere ich maßgeschneiderte RAG-Systeme und KI-Agenten. So machen Sie Ihre unstrukturierten Unternehmensdaten effizient nutzbar und revolutionieren interne Prozesse sowie Kundeninteraktionen.",
-    "duration": "Projektabhängig",
-    "level": "Unternehmen (B2B)",
-    "focus": ["Python", "Microsoft Foundry", "Agentic RAG", "LLM-Orchestrierung"],
-    "usp": "Verbindung von fundiertem operativen Management-Wissen mit modernsten AI-Technologien.",
-    "icon": "Workflow"
-  },
-  {
-    "id": "modern-web-dev",
-    "title": "Modern Full-Stack Development",
-    "desc": "Entwicklung performanter Single Page Applications (SPAs) und robuster Backend-Architekturen.",
-    "longDesc": "Ich baue skalierbare, datengesteuerte Webanwendungen von der Konzeption bis zum fertigen Rollout. Spezialisiert auf modernes Frontend-Design und komplexe Backend-Logik, um nahtlose Nutzererlebnisse und schnelle Ladezeiten zu garantieren.",
-    "duration": "Projektabhängig",
-    "level": "Unternehmen (B2B)",
-    "focus": ["Next.js", "React", "TypeScript", "Node.js", "Supabase"],
-    "usp": "Agile Entwicklung (Scrum) und saubere Architektur von einem IHK-geprüften Entwickler.",
-    "icon": "Code"
-  },
-  {
-    "id": "team-leadership",
-    "title": "Team Leadership & Management",
-    "desc": "Führe Remote- und Hybrid-Teams zum Erfolg.",
-    "longDesc": "Mit meiner langjährigen Erfahrung in der operativen Leitung und Technikberatung vermittle ich essenzielle Soft Skills, Konfliktmanagement und empathische Kommunikationsstrategien, die für die moderne, dezentrale Arbeitswelt unerlässlich sind.",
-    "duration": "Individuell",
-    "level": "Führungskräfte / Management",
-    "focus": ["Soft Skills", "Konfliktmanagement", "KPI-Erreichung", "Agiles Mindset"],
-    "usp": "Praxiserprobtes Management-Wissen gepaart mit tiefem Verständnis für technische Teams.",
-    "icon": "Users"
+    "id": "course-204",
+    "number": "02",
+    "moduleCode": "MOD.SEC // 204",
+    "theme": {
+      "color": "text-[#ff003c]",
+      "bg": "bg-[#ff003c]/10",
+      "border": "border-[#ff003c]/20",
+      "glowBg": "from-[#00f0ff]/20 via-transparent to-[#ff003c]/20",
+      "glowBorder": "from-[#00f0ff]/30 via-white/5 to-[#ffcc00]/40"
+    },
+    "title": "Sicher im Internet bewegen",
+    "description": "Umfassender Datenschutz, Identitätsschutz und sichere Navigation in digitalen Räumen. Ein praktischer Leitfaden zur Erkennung von Phishing, der Einrichtung von Passwort-Managern und der Härtung Ihrer digitalen Geräte gegen alltägliche Bedrohungen.",
+    "format": "Gruppen-Workshop",
+    "duration": "90 Minuten",
+    "level": "Fortgeschritten",
+    "availability": "Auf Anfrage",
+    "curriculum": [
+      { "time": "0 - 20m", 
+      "title": "Analyse der Bedrohungslage", 
+      "description": "Aktuelle Betrugsmaschen, Social Engineering und warum Antiviren-Software allein nicht reicht." },
+      { "time": "20 - 50m", 
+      "title": "Passwort-Hygiene & 2FA", 
+      "description": "Setup eines Passwort-Managers (z.B. Bitwarden) und Aktivierung von Multi-Faktor-Authentifizierung überall." },
+      { "time": "50 - 90m", 
+      "title": "Phishing & Datensparsamkeit", 
+      "description": "Praktische Übungen zur Erkennung gefälschter Mails und Anpassung von Privacy-Settings." }
+    ],
+    "outcomes": [
+      "Lückenloses Verständnis moderner Identitätsdiebstahl-Methoden",
+      "Eigenständige Einrichtung und Nutzung eines sicheren Passwort-Managers",
+      "Fähigkeit, Phishing-Versuche in E-Mails und SMS in Sekunden zu erkennen",
+      "Deutlich reduzierter digitaler Fußabdruck"
+    ]
   }
 ]

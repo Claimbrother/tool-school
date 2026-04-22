@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface Course {
   icon: React.ComponentType<{ size: number }>;
   title: string;
@@ -38,4 +40,33 @@ export interface EmailDataClasses {
 export interface VideoModalProps {
   src: string;
   onClose: () => void;
+}
+
+export interface CurriculumItem {
+  time: string;
+  title: string;
+  description: string;
+}
+
+export interface CourseTheme {
+  color: string;
+  bg: string;
+  border: string;
+  glowBg: string;
+  glowBorder: string;
+}
+
+export interface AuraCourse {
+  id: string;
+  number: string;
+  moduleCode: string;
+  theme: CourseTheme;
+  title: string;
+  description: string;
+  format: string;
+  duration: string;
+  level: string;
+  availability: string;
+  curriculum: CurriculumItem[];
+  outcomes: string[];
 }
