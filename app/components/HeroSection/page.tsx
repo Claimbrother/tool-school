@@ -51,7 +51,7 @@ const globalStyles = `
 const Sidebar: React.FC<{ onViewChange: (id: string | null) => void; isDetailView: boolean }> = ({ onViewChange, isDetailView }) => (
   <aside className="w-full md:w-80 lg:w-96 shrink-0 border-b md:border-b-0 md:border-r border-white/5 flex flex-col p-8 lg:p-12 z-20 bg-transparent backdrop-blur-sm transition-all duration-300">
     <button onClick={() => onViewChange(null)} className="font-mono text-[10px] text-gray-500 hover:text-white transition-colors tracking-[0.2em] mb-12 uppercase text-left w-fit">
-      Aura // Init.01
+      F.H.C // Tool School
     </button>
 
     {isDetailView && (
@@ -163,7 +163,7 @@ export default function HeroSection() {
         />
 
         <main className="flex-1 px-4 pb-24 pt-24 md:px-8 md:pt-28 lg:px-12 lg:pt-28">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mr-auto ml-[425px]">
             {!activeCourse ? (
               <CourseOverview
                 courses={courses}
