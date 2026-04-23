@@ -2,7 +2,6 @@ import React from 'react';
 import {
   MapPin,
   Mail,
-  Scale,
   ShieldAlert,
   Copyright,
   Landmark
