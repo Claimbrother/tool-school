@@ -73,16 +73,15 @@ const Sidebar: React.FC<{ onViewChange: (id: string | null) => void; isDetailVie
 
       {!isDetailView && (
         <nav className="flex flex-col gap-4 fade-in">
-          <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Mentoring Ansatz</a>
-          <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Über die Dozenten</a>
-          <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Terminanfrage</a>
+          <a href="https://smart-mana-it.de/ProfileOverview" className="text-sm text-gray-400 hover:text-white transition-colors">Über mich als Dozent</a>
+          <a href="#contact" className="text-sm text-gray-400 hover:text-white transition-colors">Terminanfrage</a>
         </nav>
       )}
     </div>
     <div className="flex-grow"></div>
     <div className="hidden md:flex mt-12 items-center gap-3 font-mono text-[10px] text-gray-600 tracking-widest uppercase">
       <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] status-dot shadow-[0_0_8px_rgba(0,240,255,0.8)]"></span>
-      System Online // Enrollment Open
+      Freie plätze verfügbar
     </div>
   </aside>
 );

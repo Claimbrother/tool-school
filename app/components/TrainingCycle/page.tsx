@@ -1,41 +1,41 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Cpu, Layers, Info, ArrowRight, Check, ThumbsUp, ThumbsDown } from 'lucide-react';
+import { Cpu, Layers, Info, ArrowRight, Check, ThumbsUp, ThumbsDown, BrainCircuit } from 'lucide-react';
 
 const stages = [
-  { id: 'foundation',    title: 'Sehen & Verstehen',   subtitle: 'KERN-SYSTEME',    icon: Cpu,    active: false },
+  { id: 'foundation',    title: 'Sehen & Verstehen',   subtitle: 'KERN-SYSTEME',    icon:Info ,    active: false },
   { id: 'architecture',  title: 'Gemeinsam Anwenden',  subtitle: 'AKTUELLE PHASE',  icon: Layers, active: true  },
-  { id: 'verification',  title: 'Wissen Verfestigen',  subtitle: 'VALIDIERUNG',     icon: Info,   active: false },
-  { id: 'filter',        title: 'Wissen Erweitern',      subtitle: 'VERTIEFUNG',      icon: Info,   active: false },
+  { id: 'verification',  title: 'Wissen Verfestigen',  subtitle: 'VALIDIERUNG',     icon: Cpu,   active: false },
+  { id: 'filter',        title: 'Wissen Erweitern',      subtitle: 'VERTIEFUNG',      icon: BrainCircuit,   active: false },
 ];
 
 const pathways = [
   {
     id: 'TRK.CLD.01',
-    title: 'Verteilte Cloud-Systeme',
-    description: 'Meistern Sie die Architektur skalierbarer, fehlertoleranter Cloud-Umgebungen. Fokus auf Container-Orchestrierung, Microservices und Multi-Region-Bereitstellungsstrategien.',
+    title: 'Automatisieren sie sich all das was sie selbst nicht mehr tun wollen',
+    description: 'Lernen sie wie sie eine kleine Arme an KI-Agenten ihre emails sortieren, Termine koordinieren oder Informationen recherchieren lassen können. So dass sie sich auf die wirklich wichtigen Dinge konzentrieren können.',
     duration: '40 Stunden',
-    metricLabel: 'CREDITS',
-    metricValue: '3.0 CEU',
-    progress: 1,
+    metricLabel: 'LEVEL',
+    metricValue: 'Fortgeschritten',
+    progress: 2,
   },
   {
-    id: 'TRK.SEC.04',
-    title: 'Zero-Trust-Netzwerkdesign',
-    description: 'Erweiterte Prinzipien der identitätsbasierten Perimeter-Sicherheit. Implementierung granularer Zugriffskontrollen, kontinuierlicher Verifizierung und sicherer Enklaven-Architekturen.',
-    duration: '65 Stunden',
-    metricLabel: 'VORAUSS.',
-    metricValue: 'SEC.01',
+    id: 'TRK.SEC.02',
+    title: 'From Zero to Hero',
+    description: 'Ein indiduelles auf ihr Wunschbedürfnis zugeschnittenes Lernprogramm, um sie von den Grundlagen bis zum Expertenwissen in einem ausgewählten IT-Thema zu begleiten.',
+    duration: 'Offen',
+    metricLabel: 'LEVEL',
+    metricValue: 'Beginner',
     progress: 3,
   },
   {
-    id: 'TRK.DVO.02',
-    title: 'Infrastruktur als Code',
-    description: 'Programmatische Bereitstellung mit Terraform und Pulumi. Erlernen Sie State-Management, modulares Infrastruktur-Design und automatisierte Compliance-Prüfungen.',
-    duration: '24 Stunden',
+    id: 'TRK.DVO.03',
+    title: 'n8n Workshop: Automatisieren ohne Code',
+    description: 'In diesem praxisorientierten Workshop lernen Sie, wie Sie mit n8n, einem leistungsstarken No-Code-Automatisierungstool, komplexe Workflows erstellen können, um Ihre täglichen Aufgaben zu optimieren und zu automatisieren.',
+    duration: '60 Stunden',
     metricLabel: 'STATUS',
-    metricValue: 'Offen',
+    metricValue: 'In Entwicklung',
     progress: 0,
   },
 ];
@@ -119,7 +119,7 @@ export default function TrainingCyclePath() {
       {/* === ACTIVE PATHWAYS === */}
       <section className="flex flex-col gap-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-white/5 pb-4 gap-3">
-          <h2 className="text-2xl font-medium text-white">Aktive Lernpfade</h2>
+          <h2 className="text-2xl font-medium text-white">Mentoring</h2>
           <div className="flex items-center gap-3">
             <span className="font-mono text-[10px] tracking-[0.15em] text-gray-500 uppercase hidden sm:inline">
               INDEE: 369.A — IN Entwicklung

@@ -50,7 +50,7 @@ const CurriculumList: React.FC<{ items: CurriculumItem[]; accentColor: string }>
   <div className="lg:col-span-7 bg-[#0d0d0d] border border-white/5 rounded-3xl p-8 md:p-10 shadow-lg fade-in" style={{ animationDelay: '0.1s' }}>
     <div className={`flex items-center gap-4 mb-10 font-mono text-[11px] font-bold tracking-[0.2em] uppercase ${accentColor}`}>
       <div className="h-[1px] w-8 bg-current opacity-70"></div>
-      Curriculum Breakdown
+      Timeline
     </div>
     <div className="space-y-10 relative">
       <div className="absolute left-[3.25rem] top-2 bottom-2 w-[1px] bg-white/5 hidden sm:block"></div>
@@ -71,7 +71,7 @@ const OutcomesList: React.FC<{ outcomes: string[] }> = ({ outcomes }) => (
   <div className="bg-[#0d0d0d] border border-white/5 rounded-3xl p-8 shadow-lg flex-1 fade-in" style={{ animationDelay: '0.2s' }}>
     <div className="flex items-center gap-4 mb-8 font-mono text-[11px] font-bold tracking-[0.2em] text-[#ff003c] uppercase">
       <div className="h-[1px] w-8 bg-[#ff003c] shadow-[0_0_8px_rgba(255,0,60,0.6)]"></div>
-      Learning Outcomes
+      Was Sie lernen werden
     </div>
     <ul className="space-y-4">
       {outcomes.map((outcome, index) => (
@@ -88,7 +88,7 @@ const InstructorCard: React.FC = () => (
   <div className="bg-[#0d0d0d] border border-white/5 rounded-3xl p-8 shadow-lg fade-in" style={{ animationDelay: '0.3s' }}>
     <div className="flex items-center gap-4 mb-6 font-mono text-[11px] font-bold tracking-[0.2em] text-[#ffcc00] uppercase">
       <div className="h-[1px] w-8 bg-[#ffcc00] shadow-[0_0_8px_rgba(255,204,0,0.6)]"></div>
-      Lead Instructor
+      Dozent
     </div>
     <div className="flex gap-5 items-start">
       <div className="w-14 h-16 rounded-full bg-gradient-to-b from-[#161616] to-[#050505] border border-white/5 shrink-0 shadow-inner">

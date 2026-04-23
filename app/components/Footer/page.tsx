@@ -12,6 +12,7 @@ const Footer = () => (
       <a href="https://twitter.com/Claimbrother" className="text-slate-400 hover:text-white transition-colors"><NewTwitterIcon size={20} /></a>
     </div>
     <p className="text-slate-500 text-sm">© {new Date().getFullYear()} Falilou Holler.</p>
+    <a href="/Impressum" className="text-slate-500 hover:text-slate-300 text-sm transition-colors mt-2 inline-block">Impressum</a>
   </footer>
 );
 
