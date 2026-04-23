@@ -38,7 +38,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   const navLinks = [
-    { name: 'Home', href: '/', section: 'https://smart-mana-it.de/' },               // Hauptseite
+    { name: 'Home', href: 'https://smart-mana-it.de/', section: 'home' },               // Hauptseite
     { name: 'Über mich', href: 'https://smart-mana-it.de/ProfileOverview', section: 'about' },    // Ordner AboutMe
     { name: 'Projekte', href: 'https://smart-mana-it.de/#projects', section: 'projects' },   // Ordner Projects
     { name: 'Schulungen', href: 'home', section: 'classes' },  // Ordner Classes
