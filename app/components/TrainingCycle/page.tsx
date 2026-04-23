@@ -7,7 +7,7 @@ const stages = [
   { id: 'foundation',    title: 'Sehen & Verstehen',   subtitle: 'KERN-SYSTEME',    icon: Cpu,    active: false },
   { id: 'architecture',  title: 'Gemeinsam Anwenden',  subtitle: 'AKTUELLE PHASE',  icon: Layers, active: true  },
   { id: 'verification',  title: 'Wissen Verfestigen',  subtitle: 'VALIDIERUNG',     icon: Info,   active: false },
-  { id: 'filter',        title: 'Wissen Filtern',      subtitle: 'VERTIEFUNG',      icon: Info,   active: false },
+  { id: 'filter',        title: 'Wissen Erweitern',      subtitle: 'VERTIEFUNG',      icon: Info,   active: false },
 ];
 
 const pathways = [
@@ -64,13 +64,13 @@ export default function TrainingCyclePath() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-light tracking-tight leading-[1.1]">
-            <span className="text-white">Entwerfe das System.</span><br />
-            <span className="text-gray-500">Meistere den Zyklus.</span>
+            <span className="text-white">Ein System, Ein Zyklus.</span><br />
+            <span className="text-gray-500">Individuelle Anwendung.</span>
           </h2>
-
-          <p className="text-gray-400 text-base leading-relaxed max-w-xl font-light">
-            Ein immersives Curriculum, entwickelt für erfahrene IT-Experten. Durchlaufen Sie Grundlagen, Architektur und spezialisierte Meisterklassen.
-          </p>
+{/* 
+          <p className="text-gray-400 text-base leading-relaxed max-w-2xl font-light">
+            Kognition ist ein mächtiger Mechanismus, Lernen funktioniert bei uns allen gleich aber trotzdem ganz eigen, weshalb an Ihre individuellen Lernbedürfnisse anpasst. Unser Trainingszyklus ist kein starrer Pfad, sondern ein flexibles Framework, das kontinuierliches Wachstum und Anpassung ermöglicht. Jeder Schritt ist darauf ausgelegt, Sie dort abzuholen, wo Sie stehen, und Sie auf Ihrem Weg zum Experten zu begleiten.
+          </p> */}
         </div>
 
         {/* Stage Cards */}

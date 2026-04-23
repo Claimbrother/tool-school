@@ -124,7 +124,7 @@ const OverviewCourseCard: React.FC<{ course: AuraCourse; onSelect: () => void }>
 );
 
 const CourseOverview: React.FC<{ courses: AuraCourse[]; onSelectCourse: (id: string) => void }> = ({ courses, onSelectCourse }) => (
-  <div className="space-y-8 pb-12">
+  <div className="space-y-8 pb-12 md:mx-4 lg:ml-[6vw] lg:mr-[18vw]">
     <div className="fade-in mb-8">
       <h2 className="text-white text-2xl font-medium tracking-tight mb-2">Verfügbare Module</h2>
       <p className="text-gray-500 text-sm">Wählen Sie ein Modul für detaillierte Informationen.</p>
@@ -162,8 +162,8 @@ export default function HeroSection() {
           isDetailView={activeCourse !== undefined}
         />
 
-        <main className="flex-1 px-4 pb-24 pt-24 md:px-8 md:pt-28 lg:px-12 lg:pt-28">
-          <div className="max-w-5xl">
+        <main className="flex-1 min-w-0 px-4 md:px-8 lg:px-12 pb-24 pt-24 md:pt-28">
+          <div className="w-full">
             {!activeCourse ? (
               <CourseOverview
                 courses={courses}

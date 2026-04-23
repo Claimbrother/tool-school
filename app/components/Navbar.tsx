@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 
@@ -8,18 +8,20 @@ import Link from 'next/link';
 
 // 1. Navigation
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-  // const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
+    let lastY = window.scrollY;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-      
-      // Determine active section based on scroll position
-      const sections = ['home', 'about', 'projects', 'classes', 'contact'];
-      const scrollPosition = window.scrollY + 100; // Offset for navbar height
-      
+      const currentY = window.scrollY;
+      setHidden(currentY > lastY && currentY > 80);
+      lastY = currentY;
+
+      const sections = ['home', 'über mich', 'projekte', 'schulungen', 'kontakt'];
+      const scrollPosition = currentY + 100;
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -33,107 +35,115 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call once to set initial active section
-    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   const navLinks = [
     { name: 'Home', href: '/', section: 'home' },               // Hauptseite
-    { name: 'Über mich', href: 'https://smart-mana-it.de/ProfileOverview', section: 'about' },    // Ordner AboutMe
+    { name: 'Über mich', href: '/ProfileOverview', section: 'about' },    // Ordner AboutMe
     { name: 'Projekte', href: 'https://smart-mana-it.de/#projects', section: 'projects' },   // Ordner Projects
-    { name: 'Schulungen', href: '/#classes', section: 'classes' },  // Ordner Classes
+    { name: 'Schulungen', href: 'http://tool-school.smart-mana-it.de', section: 'classes' },  // Ordner Classes
     { name: 'Kontakt', href: '/#contact', section: 'contact' },     // Ordner Contact
   ];
 
 
-return (
+
+  return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      animate={{ y: hidden ? '-150%' : '0%', opacity: 1 }}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
       className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4"
     >
       <div className={`
-        flex items-center gap-1 md:gap-4 px-3 md:px-6 py-3 rounded-full
+        flex items-center gap-1 md:gap-4 px-6 py-3 rounded-full 
         transition-all duration-300 backdrop-blur-xl border border-white/10
-        ${ scrolled ? 'bg-slate-950/80 shadow-lg shadow-black/20' : 'bg-white/5' }
+        ${ !hidden ? 'bg-slate-950/40 shadow-lg shadow-black/20' : 'bg-white/5' }
       `}>
         {navLinks.map((link) => (
           <Link
             key={link.name}
             href={link.href}
-            className={`hidden md:block px-4 py-2 text-sm font-medium transition-colors rounded-full ${
+            className={`hidden md:block px-4 py-2 text-sm font-medium transition-colors rounded-full border ${
               activeSection === link.section
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
+                ? 'text-white bg-blue-500/20 border-blue-400/30'
+                : 'text-slate-300 border-transparent hover:text-white hover:bg-white/10'
             }`}
           >
             {link.name}
           </Link>
         ))}
 
-        {/* Mobile Menu Simplified for demo */}
-        <div className="md:hidden flex gap-1 overflow-x-auto max-w-[calc(100vw-2rem)] scrollbar-none">
-          <a 
-            href="#home" 
-            className={`px-3 py-2 text-sm transition-colors rounded-full ${
-              activeSection === 'home'
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            Home
-          </a>
-          <a 
-            href="https://smart-mana-it.de/#about" 
-            className={`px-3 py-2 text-sm transition-colors rounded-full ${
-              activeSection === 'about'
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            About
-          </a>
-          <a 
-            href="https://smart-mana-it.de/#projects" 
-            className={`px-3 py-2 text-sm transition-colors rounded-full ${ 
-              activeSection === 'projects'
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            Projects
-          </a>
-          <a 
-            href="#classes"
-            className={`px-3 py-2 text-sm transition-colors rounded-full ${
-              activeSection === 'classes'
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            Classes
-          </a>
-          <a 
-            href="#contact"
-            className={`px-3 py-2 text-sm transition-colors rounded-full ${
-              activeSection === 'contact'
-                ? 'text-white bg-blue-500/20 border border-blue-400/30'
-                : 'text-slate-300 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            Contact
-          </a>
-        </div>
-
-        {/* <div className="w-px h-6 bg-white/20 mx-2 hidden md:block"></div> */}
-
-        {/* <button
-          onClick={() => setIsDark(!isDark)}
-          className="p-2 rounded-full hover:bg-white/10 text-slate-300 hover:text-white transition-colors"
+        {/* Burger Button */}
+        <button
+          onClick={() => setMenuOpen(v => !v)}
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-full hover:bg-white/10 transition-colors"
+          aria-label="Menü öffnen"
         >
-          {isDark ? <Moon size={18} /> : <Sun size={18} />}
-        </button> */}
+          <motion.span
+            animate={menuOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.25 }}
+            className="block w-5 h-[2px] bg-slate-300 rounded-full origin-center"
+          />
+          <motion.span
+            animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+            transition={{ duration: 0.2 }}
+            className="block w-5 h-[2px] bg-slate-300 rounded-full"
+          />
+          <motion.span
+            animate={menuOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.25 }}
+            className="block w-5 h-[2px] bg-slate-300 rounded-full origin-center"
+          />
+        </button>
       </div>
+
+      {/* Mobile Fullscreen Overlay */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, backdropFilter: 'blur(0px)' }}
+            animate={{ opacity: 1, backdropFilter: 'blur(24px)' }}
+            exit={{ opacity: 0, backdropFilter: 'blur(0px)' }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[90] md:hidden bg-slate-950/80 flex flex-col items-center justify-center"
+            onClick={() => setMenuOpen(false)}
+          >
+            <nav className="flex flex-col items-center gap-6" onClick={e => e.stopPropagation()}>
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 16 }}
+                  transition={{ duration: 0.3, delay: i * 0.06 }}
+                >
+                  <Link
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`block text-3xl font-bold tracking-tight transition-colors ${
+                      activeSection === link.section
+                        ? 'text-blue-400'
+                        : 'text-slate-200 hover:text-white'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </nav>
+
+            {/* Dekorativer Untertitel */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="absolute bottom-12 text-[0.65rem] text-slate-500 uppercase tracking-widest font-mono"
+            >
+              Full-Stack · KI · Beratung
+            </motion.p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };

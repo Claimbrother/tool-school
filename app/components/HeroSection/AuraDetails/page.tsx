@@ -4,6 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import React from 'react';
 import { AuraCourse, CurriculumItem } from '@/app/types';
+import Image from 'next/image';
 
 const DetailHeroCard: React.FC<{ course: AuraCourse }> = ({ course }) => (
   <div className="relative rounded-[2rem] p-[1px] group fade-in">
@@ -90,11 +91,17 @@ const InstructorCard: React.FC = () => (
       Lead Instructor
     </div>
     <div className="flex gap-5 items-start">
-      <div className="w-14 h-16 rounded-full bg-gradient-to-b from-[#161616] to-[#050505] border border-white/5 shrink-0 shadow-inner"></div>
+      <div className="w-14 h-16 rounded-full bg-gradient-to-b from-[#161616] to-[#050505] border border-white/5 shrink-0 shadow-inner">
+      <Image src="/PorfolioIMG.jpeg" 
+      alt="Instructor Photo" 
+      width={56} 
+      height={64} 
+      className="rounded-full object-cover" />
+      </div>
       <div>
-        <h4 className="text-white text-lg font-medium mb-1">Dr. Julian Richter</h4>
+        <h4 className="text-white text-lg font-medium mb-1">Falilou Holler</h4>
         <div className="font-mono text-[10px] text-gray-500 mb-3 tracking-[0.1em] uppercase">
-          SYS.ADMIN // AI.SPECIALIST
+          WEB.DEV. // AI.SPECIALIST
         </div>
         <p className="text-sm text-gray-400 leading-relaxed">
           Experte für angewandte KI und digitale Didaktik mit 10+ Jahren Erfahrung in der Technologievermittlung.
