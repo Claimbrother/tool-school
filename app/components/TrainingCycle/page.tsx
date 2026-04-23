@@ -74,7 +74,7 @@ export default function TrainingCyclePath() {
         </div>
 
         {/* Stage Cards */}
-        <div className="relative w-full flex justify-between items-center gap-4 mt-4">
+        <div className="relative w-full grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
           <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2 z-0">
             <div className="absolute top-1/2 -translate-y-1/2 w-[30%] h-[1px] flex items-center" style={{ animation: 'plasma-beam 6s ease-in-out infinite' }}>
               <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#00f0ff]/60 to-transparent shadow-[0_0_12px_rgba(0,240,255,0.4)]"></div>
@@ -95,7 +95,7 @@ export default function TrainingCyclePath() {
             return (
               <div
                 key={stage.id}
-                className={`relative z-10 flex flex-col items-center justify-center flex-1 py-8 px-4 rounded-3xl bg-[#0d0d0d] transition-all duration-300
+                className={`relative z-10 flex flex-col items-center justify-center py-6 md:py-8 px-3 md:px-4 rounded-3xl bg-[#0d0d0d] transition-all duration-300
                   ${stage.active
                     ? 'border border-[#00f0ff]/20 shadow-[0_0_30px_rgba(0,240,255,0.05)]'
                     : 'border border-white/5'
@@ -104,10 +104,10 @@ export default function TrainingCyclePath() {
                 <div className={`p-3 rounded-2xl mb-4 border border-white/5 ${stage.active ? 'text-[#00f0ff]' : 'text-gray-500'}`}>
                   <Icon size={20} strokeWidth={1.5} />
                 </div>
-                <h3 className={`font-medium text-sm text-center ${stage.active ? 'text-white' : 'text-gray-300'}`}>
+                <h3 className={`font-medium text-xs md:text-sm text-center ${stage.active ? 'text-white' : 'text-gray-300'}`}>
                   {stage.title}
                 </h3>
-                <span className={`font-mono text-[9px] tracking-[0.2em] mt-2 uppercase ${stage.active ? 'text-gray-400' : 'text-gray-600'}`}>
+                <span className={`font-mono text-[8px] md:text-[9px] tracking-[0.2em] mt-2 uppercase text-center ${stage.active ? 'text-gray-400' : 'text-gray-600'}`}>
                   {stage.subtitle}
                 </span>
               </div>
@@ -118,10 +118,10 @@ export default function TrainingCyclePath() {
 
       {/* === ACTIVE PATHWAYS === */}
       <section className="flex flex-col gap-8">
-        <div className="flex items-end justify-between border-b border-white/5 pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-white/5 pb-4 gap-3">
           <h2 className="text-2xl font-medium text-white">Aktive Lernpfade</h2>
           <div className="flex items-center gap-3">
-            <span className="font-mono text-[10px] tracking-[0.15em] text-gray-500 uppercase">
+            <span className="font-mono text-[10px] tracking-[0.15em] text-gray-500 uppercase hidden sm:inline">
               INDEE: 369.A — IN Entwicklung
             </span>
             <button
@@ -139,7 +139,7 @@ export default function TrainingCyclePath() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {pathways.map((path) => (
             <div
               key={path.id}

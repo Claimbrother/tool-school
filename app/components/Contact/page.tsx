@@ -37,7 +37,7 @@ const ContactSection = () => {
 };
 
   return (
-    <section id="contact" className="py-24 px-4 relative z-10">
+    <section id="contact" className="py-12 md:py-24 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
         
         <GlassCard className="p-8 md:p-12 bg-slate-950/60">

@@ -53,7 +53,7 @@ return (
       className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4"
     >
       <div className={`
-        flex items-center gap-1 md:gap-4 px-6 py-3 rounded-full 
+        flex items-center gap-1 md:gap-4 px-3 md:px-6 py-3 rounded-full
         transition-all duration-300 backdrop-blur-xl border border-white/10
         ${ scrolled ? 'bg-slate-950/80 shadow-lg shadow-black/20' : 'bg-white/5' }
       `}>
@@ -72,7 +72,7 @@ return (
         ))}
 
         {/* Mobile Menu Simplified for demo */}
-        <div className="md:hidden flex gap-2">
+        <div className="md:hidden flex gap-1 overflow-x-auto max-w-[calc(100vw-2rem)] scrollbar-none">
           <a 
             href="#home" 
             className={`px-3 py-2 text-sm transition-colors rounded-full ${

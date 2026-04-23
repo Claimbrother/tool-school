@@ -163,7 +163,7 @@ export default function HeroSection() {
         />
 
         <main className="flex-1 px-4 pb-24 pt-24 md:px-8 md:pt-28 lg:px-12 lg:pt-28">
-          <div className="max-w-5xl mr-auto ml-[425px]">
+          <div className="max-w-5xl">
             {!activeCourse ? (
               <CourseOverview
                 courses={courses}

@@ -14,11 +14,11 @@ const DetailHeroCard: React.FC<{ course: AuraCourse }> = ({ course }) => (
         <span className={`inline-flex items-center rounded-full ${course.theme.bg} px-3 py-1 text-[11px] font-mono font-semibold ${course.theme.color} border ${course.theme.border} uppercase tracking-widest`}>
           {course.moduleCode}
         </span>
-        <span className="text-7xl font-bold text-outline leading-none select-none">{course.number}</span>
+        <span className="text-5xl md:text-7xl font-bold text-outline leading-none select-none">{course.number}</span>
       </div>
       <h2 className="text-4xl md:text-5xl font-medium text-white mb-6 tracking-tight">{course.title}</h2>
       <p className="text-gray-400 text-base md:text-lg max-w-3xl leading-relaxed mb-12">{course.description}</p>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 border-t border-white/5 pt-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 border-t border-white/5 pt-8">
         <div>
           <div className="font-mono text-[10px] text-gray-500 tracking-widest uppercase mb-2">Format</div>
           <div className="text-white text-sm font-medium">{course.format}</div>

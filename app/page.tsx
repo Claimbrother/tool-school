@@ -29,8 +29,8 @@ export default function Home() {
       </div>
 
       {/* 2. Hintergrund-Beleuchtung */}
-      <div className="fixed top-1/4 left-2/4 w-96 h-96 bg-blue-600/40 rounded-full blur-[120px] pointer-events-none z-0" />
-      <div className="fixed bottom-1/4 right-2/4 w-96 h-96 bg-purple-600/40 rounded-full blur-[120px] pointer-events-none z-0" />
+      <div className="fixed top-1/4 left-2/4 w-48 md:w-96 h-48 md:h-96 bg-blue-600/40 rounded-full blur-[120px] pointer-events-none z-0" />
+      <div className="fixed bottom-1/4 right-2/4 w-48 md:w-96 h-48 md:h-96 bg-purple-600/40 rounded-full blur-[120px] pointer-events-none z-0" />
 
       {/* 3. Navigation */}
       <Navbar />
@@ -39,7 +39,7 @@ export default function Home() {
       {/* HeroSection wird ohne width-Limit gerendert */}
       <HeroSection />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-6">
         <section id="classes" className="min-h-screen py-20">
           <TrainingCyclePath />
         </section>

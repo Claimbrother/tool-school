@@ -32,8 +32,8 @@ const SchulungenSection = () => {
     <section id="schulungen" className="py-24 px-4 relative z-10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 max-w-6xl mx-auto">
-          <h2 className="text-5xl md:text-7xl font-bold mt-12 tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 mb-6 pb-6">IT & KI endlich verstehen <br /> ganz ohne Fachchinesisch</h2>
-          <p className="text-slate-400 text-lg">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mt-12 tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 mb-6 pb-6">IT & KI endlich verstehen <br /> ganz ohne Fachchinesisch</h2>
+          <p className="text-slate-400 text-base md:text-lg">
             Damit Sie sich nicht mühsam mit komplexen IT- und KI-Themen auseinandersetzen müssen, bereite ich diese für Sie verständlich auf. Ich konzentriere mich genau auf die Bereiche, die Ihnen bisher wie ein unlösbares Rätsel erschienen sind. Durch meine jahrelange Erfahrung im IT-Bereich und meine lebenslange Begeisterung für moderne Technologien habe ich nie den Anschluss an die digitale Welt verloren. Mir fällt es leicht, mich auch in neue Themen einzuarbeiten – selbst wenn diese komplex wirken. Dieses Wissen gebe ich an Sie weiter. 
           </p>
           {/* <p className="text-slate-400 text-lg">
