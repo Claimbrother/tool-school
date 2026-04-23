@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 
 import HeroSection from "./components/HeroSection/page";
 import ContactSection from "./components/Contact/page";
-import Footer  from "./components/Footer/page";
 import TrainingCyclePath from "./components/TrainingCycle/page";
 
 export default function Home() {
@@ -48,9 +47,6 @@ export default function Home() {
         <section id="contact" className="min-h-screen py-20 flex items-center justify-center">
           <ContactSection />
         </section>
-      </div>
-      <div className="bg-slate-950/80 ">
-      <Footer />
       </div>
     </main>
   );
