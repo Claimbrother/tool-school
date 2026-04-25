@@ -5,7 +5,6 @@ export const dynamic = 'force-dynamic';
 import React from 'react';
 import { AuraCourse, CurriculumItem } from '@/app/types';
 import Image from 'next/image';
-
 const DetailHeroCard: React.FC<{ course: AuraCourse }> = ({ course }) => (
   <div className="relative rounded-[2rem] p-[1px] group fade-in">
     <div className={`absolute inset-0 bg-gradient-to-br ${course.theme.glowBg} rounded-[2rem] blur-xl opacity-60 transition-opacity duration-500 group-hover:opacity-100`}></div>
@@ -38,7 +37,9 @@ const DetailHeroCard: React.FC<{ course: AuraCourse }> = ({ course }) => (
         </div>
       </div>
       <div>
-        <button className="bg-white hover:bg-gray-200 text-black px-8 py-3.5 rounded-full font-medium text-sm transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+        <button
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          className="bg-white hover:bg-gray-200 text-black px-8 py-3.5 rounded-full font-medium text-sm transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(255,255,255,0.1)]">
           Jetzt Termin vereinbaren
         </button>
       </div>
