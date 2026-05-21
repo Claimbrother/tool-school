@@ -1,0 +1,117 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "classes": "Courses",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "tagline": "Full-Stack · AI · Consulting"
+  },
+  "Hero": {
+    "subtitle": "Premium IT mentoring and structured AI fundamentals training. We translate complex technology into actionable knowledge for your confident digital life.",
+    "aboutLink": "About me as an instructor",
+    "bookingLink": "Book a session",
+    "available": "Spots available",
+    "modulesTitle": "Available Modules",
+    "modulesSub": "Select a module for detailed information.",
+    "details": "View details",
+    "back": "Back to overview",
+    "formatLabel": "Format",
+    "durationLabel": "Duration",
+    "levelLabel": "Level"
+  },
+  "AuraDetails": {
+    "timeline": "Timeline",
+    "learningOutcomes": "What you will learn",
+    "instructor": "Instructor",
+    "instructorBio": "Expert in applied AI and digital education with 10+ years of experience in technology training.",
+    "bookAppointment": "Book an appointment",
+    "formatLabel": "Format",
+    "durationLabel": "Duration",
+    "levelLabel": "Level",
+    "availabilityLabel": "Availability"
+  },
+  "Classes": {
+    "titleLine1": "Finally understand IT & AI",
+    "titleLine2": "without the tech jargon",
+    "desc": "So you don't have to struggle with complex IT and AI topics on your own, I prepare them in a way that's easy to understand. I focus exactly on the areas that have seemed like an unsolvable puzzle to you. Through my years of experience in IT and my lifelong passion for modern technologies, I've never lost touch with the digital world. I find it easy to get up to speed on new topics — even when they seem complex. That knowledge is what I pass on to you.",
+    "courses": {
+      "ki": {
+        "title": "Understanding AI in Everyday Life",
+        "desc": "Learn the fundamentals of Artificial Intelligence (such as ChatGPT, Gemini, NotebookLM and more). I explain without jargon how you can use these tools safely and helpfully in your daily life.",
+        "longDesc": "In this course we dive into the world of Artificial Intelligence, specifically how ChatGPT and Gemini work. You'll learn how AI models are trained, what they can do, and most importantly, how you can use these technologies safely and effectively in your everyday life. From creating texts and answering questions to automating tasks — discover the many uses of AI and how it can make your daily life easier."
+      },
+      "internet": {
+        "title": "Staying Safe Online",
+        "desc": "Recognise dangers, protect your personal data, and navigate the web with confidence. A hands-on course for a safer digital life.",
+        "longDesc": "The sheer volume of information on the internet can feel overwhelming. In this course you'll learn how to move safely online. We cover topics like data privacy, identity theft, and cyberbullying. You'll find out how to protect your personal data and what steps you can take to protect yourself and your loved ones from online threats. The course offers practical tips and strategies to navigate the digital jungle of social media and headlines safely and confidently."
+      },
+      "smartphone": {
+        "title": "Mastering Your Smartphone & Apps",
+        "desc": "From basic settings to useful apps for travel, health, and communication. We'll get you comfortable with your smartphone for everyday use.",
+        "longDesc": "In this course you'll learn how to use your smartphone effectively. We cover basic settings, useful apps for travel, health, and communication. You'll find out how to customise your device and which features can make your life easier."
+      }
+    }
+  },
+  "TrainingCycle": {
+    "heading1": "One System, One Cycle.",
+    "heading2": "Individual Application.",
+    "mentoring": "Mentoring",
+    "status": "INDEE: 369.A — IN DEVELOPMENT",
+    "durationLabel": "Duration",
+    "stages": {
+      "0": { "title": "See & Understand", "subtitle": "CORE SYSTEMS" },
+      "1": { "title": "Apply Together", "subtitle": "CURRENT PHASE" },
+      "2": { "title": "Solidify Knowledge", "subtitle": "VALIDATION" },
+      "3": { "title": "Expand Knowledge", "subtitle": "DEEPENING" }
+    },
+    "pathways": {
+      "0": {
+        "title": "Automate everything you no longer want to do yourself",
+        "description": "Learn how a small army of AI agents can sort your emails, coordinate appointments, or research information — so you can focus on what truly matters.",
+        "duration": "40 Hours",
+        "metricLabel": "LEVEL",
+        "metricValue": "Advanced"
+      },
+      "1": {
+        "title": "From Zero to Hero",
+        "description": "An individualised learning programme tailored to your needs, guiding you from the basics to expert knowledge in a chosen IT topic.",
+        "duration": "Open",
+        "metricLabel": "LEVEL",
+        "metricValue": "Beginner"
+      },
+      "2": {
+        "title": "n8n Workshop: Automate Without Code",
+        "description": "In this hands-on workshop you'll learn how to use n8n, a powerful no-code automation tool, to build complex workflows that optimise and automate your daily tasks.",
+        "duration": "60 Hours",
+        "metricLabel": "STATUS",
+        "metricValue": "In Development"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Let's Connect",
+    "subtitle": "How can I help you? Choose your area below.",
+    "tabCoding": "Coding Project",
+    "tabTraining": "Training / Mentoring",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelExperience": "Prior knowledge",
+    "labelPhone": "Phone (optional)",
+    "labelMessage": "Message",
+    "placeholderName": "Jane Smith",
+    "placeholderEmail": "jane@example.com",
+    "placeholderPhone": "For callbacks",
+    "placeholderMessage": "Your message...",
+    "experiencePlaceholder": "Please select...",
+    "experienceBeginner": "Beginner / No experience",
+    "experienceIntermediate": "Some basic knowledge",
+    "submitButton": "Send message",
+    "successMessage": "Email sent successfully!",
+    "errorMessage": "Error sending message."
+  },
+  "Footer": {
+    "impressum": "Legal Notice"
+  }
+}

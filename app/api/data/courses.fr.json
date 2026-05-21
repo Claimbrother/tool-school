@@ -1,0 +1,72 @@
+[
+  {
+    "id": "course-101",
+    "number": "01",
+    "moduleCode": "MOD.AI // 101",
+    "theme": {
+      "color": "text-[#00f0ff]",
+      "bg": "bg-[#00f0ff]/10",
+      "border": "border-[#00f0ff]/20",
+      "glowBg": "from-purple-600/30 via-transparent to-[#00f0ff]/30",
+      "glowBorder": "from-purple-500/20 via-white/5 to-[#00f0ff]/30"
+    },
+    "title": "Comprendre l'IA au quotidien",
+    "description": "Fondamentaux de ChatGPT et Gemini pour une utilisation quotidienne en toute sécurité. Démystifier l'intelligence artificielle générative. Apprenez à utiliser les modèles de langage modernes comme assistants efficaces, à formuler des prompts précis et à évaluer les résultats de manière critique.",
+    "format": "Session 1:1",
+    "duration": "120 minutes",
+    "level": "Fondamentaux",
+    "availability": "Immédiatement",
+    "curriculum": [
+      { "time": "0 - 30m", "title": "La mécanique derrière l'IA", "description": "Explication claire des LLMs, de l'entraînement et du fonctionnement — sans jargon technique." },
+      { "time": "30 - 60m", "title": "Bases du Prompt Engineering", "description": "Structurer des instructions efficaces. Comment le contexte, le rôle et le format améliorent considérablement les résultats." },
+      { "time": "60 - 90m", "title": "Cas d'usage & pratique", "description": "Création collaborative de modèles pour les emails, les résumés de textes et le brainstorming créatif." },
+      { "time": "90 - 120m", "title": "Sécurité & limites", "description": "Reconnaître les hallucinations, la protection des données lors de la saisie et l'évaluation critique des sources." }
+    ],
+    "outcomes": [
+      "Navigation assurée dans les interfaces IA courantes (ChatGPT, Gemini)",
+      "Capacité à décomposer des tâches complexes en prompts itératifs",
+      "Compréhension de la gestion sécurisée des données sensibles",
+      "Reconnaissance des informations erronées générées par l'IA",
+      "Mise en place de system prompts personnalisés"
+    ]
+  },
+  {
+    "id": "course-204",
+    "number": "02",
+    "moduleCode": "MOD.AI // 102",
+    "theme": {
+      "color": "text-[#ff003c]",
+      "bg": "bg-[#ff003c]/10",
+      "border": "border-[#ff003c]/20",
+      "glowBg": "from-[#00f0ff]/20 via-transparent to-[#ff003c]/20",
+      "glowBorder": "from-[#00f0ff]/30 via-white/5 to-[#ffcc00]/40"
+    },
+    "title": "Utiliser l'IA en toute sécurité en entreprise",
+    "description": "C'est seulement quand vos employés peuvent utiliser les outils IA de manière compétente et sécurisée qu'ils libèrent leur plein potentiel. Dans cet atelier pratique, vos équipes apprennent à intégrer efficacement les applications basées sur l'IA dans leur travail quotidien tout en respectant la protection des données et les directives éthiques.",
+    "format": "Atelier en groupe",
+    "duration": "120 minutes",
+    "level": "Fondamentaux+",
+    "availability": "Sur demande",
+    "curriculum": [
+      { "time": "0 - 20m",
+      "title": "Quel outil IA excelle dans quoi, et pourquoi ?",
+      "description": "Nous apprenons ensemble à déléguer intuitivement les tâches aux bons outils IA." },
+      { "time": "20 - 50m",
+      "title": "Utiliser les outils IA en toute confiance",
+      "description": "Que pouvons-nous faire pour obtenir le meilleur résultat possible avec le moins de retouches nécessaires ?" },
+      { "time": "50 - 90m",
+      "title": "Comment savoir si l'IA a généré une réponse fiable ?",
+      "description": "Reconnaître et évaluer de manière critique les mauvaises réponses — en réfléchissant à ses propres connaissances sur le sujet." },
+      { "time": "90 - 120m",
+      "title": "Les outils IA comme accélérateurs de productivité au travail",
+      "description": "Questions-réponses et stratégies pour intégrer les outils IA dans les flux de travail quotidiens et optimiser la productivité." }
+    ],
+    "outcomes": [
+      "Utilisation assurée des outils IA courants dans le travail quotidien",
+      "Compréhension de la protection des données et des directives pour l'usage de l'IA",
+      "Évaluation critique des contenus générés par l'IA",
+      "Efficacité nettement accrue grâce à l'utilisation ciblée de l'IA",
+      "Prise de conscience des aspects éthiques des applications IA"
+    ]
+  }
+]

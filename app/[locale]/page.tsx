@@ -1,11 +1,9 @@
 "use client";
 
-import Navbar from "./components/Navbar";
-
-
-import HeroSection from "./components/HeroSection/page";
-import ContactSection from "./components/Contact/page";
-import TrainingCyclePath from "./components/TrainingCycle/page";
+import Navbar from "@/app/components/Navbar";
+import HeroSection from "@/app/components/HeroSection";
+import ContactSection from "@/app/components/Contact";
+import TrainingCyclePath from "@/app/components/TrainingCycle";
 
 export default function Home() {
   return (

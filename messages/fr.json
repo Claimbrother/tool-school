@@ -1,0 +1,117 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "classes": "Formations",
+    "contact": "Contact",
+    "menuOpen": "Ouvrir le menu",
+    "tagline": "Full-Stack · IA · Conseil"
+  },
+  "Hero": {
+    "subtitle": "Mentorat IT premium et formations structurées aux fondamentaux de l'IA. Nous traduisons les technologies complexes en savoir applicable pour votre quotidien numérique en toute confiance.",
+    "aboutLink": "À propos de moi en tant que formateur",
+    "bookingLink": "Prendre rendez-vous",
+    "available": "Places disponibles",
+    "modulesTitle": "Modules disponibles",
+    "modulesSub": "Sélectionnez un module pour des informations détaillées.",
+    "details": "Voir les détails",
+    "back": "Retour à l'aperçu",
+    "formatLabel": "Format",
+    "durationLabel": "Durée",
+    "levelLabel": "Niveau"
+  },
+  "AuraDetails": {
+    "timeline": "Programme",
+    "learningOutcomes": "Ce que vous apprendrez",
+    "instructor": "Formateur",
+    "instructorBio": "Expert en IA appliquée et en pédagogie numérique avec plus de 10 ans d'expérience dans la formation technologique.",
+    "bookAppointment": "Prendre un rendez-vous",
+    "formatLabel": "Format",
+    "durationLabel": "Durée",
+    "levelLabel": "Niveau",
+    "availabilityLabel": "Disponibilité"
+  },
+  "Classes": {
+    "titleLine1": "Comprendre l'IT & l'IA enfin",
+    "titleLine2": "sans le jargon technique",
+    "desc": "Pour que vous n'ayez pas à vous débattre seul avec des sujets IT et IA complexes, je les prépare pour vous de manière accessible. Je me concentre précisément sur les domaines qui vous ont jusqu'à présent semblé comme une énigme insoluble. Grâce à mes années d'expérience dans l'IT et ma passion de toujours pour les technologies modernes, je n'ai jamais perdu le fil du monde numérique. Je m'adapte facilement à de nouveaux sujets — même s'ils paraissent complexes. C'est ce savoir que je vous transmets.",
+    "courses": {
+      "ki": {
+        "title": "Comprendre l'IA au quotidien",
+        "desc": "Apprenez les fondamentaux de l'Intelligence Artificielle (comme ChatGPT, Gemini, NotebookLM et bien plus). J'explique sans jargon comment utiliser ces outils de manière sûre et utile dans votre vie quotidienne.",
+        "longDesc": "Dans ce cours, nous plongeons dans le monde de l'Intelligence Artificielle, en particulier le fonctionnement de ChatGPT et Gemini. Vous apprendrez comment les modèles IA sont entraînés, ce qu'ils peuvent faire et surtout comment utiliser ces technologies de façon sûre et efficace au quotidien. De la création de textes à la réponse à des questions en passant par l'automatisation de tâches — découvrez les multiples usages de l'IA et comment elle peut simplifier votre vie."
+      },
+      "internet": {
+        "title": "Naviguer en toute sécurité sur Internet",
+        "desc": "Identifiez les dangers, protégez vos données personnelles et naviguez sur le web en toute confiance. Un cours pratique pour une vie numérique plus sûre.",
+        "longDesc": "La masse d'informations sur Internet peut sembler écrasante. Dans ce cours, vous apprendrez à naviguer en toute sécurité en ligne. Nous abordons des sujets comme la protection des données, le vol d'identité et le cyberharcèlement. Vous découvrirez comment protéger vos données personnelles et quelles mesures prendre pour vous et vos proches contre les dangers en ligne. Le cours propose des conseils pratiques pour naviguer avec sérénité dans la jungle numérique des réseaux sociaux et des actualités."
+      },
+      "smartphone": {
+        "title": "Maîtriser son smartphone & ses applications",
+        "desc": "Des paramètres de base aux applications utiles pour les voyages, la santé et la communication. Nous vous rendons à l'aise avec votre smartphone au quotidien.",
+        "longDesc": "Dans ce cours, vous apprendrez à utiliser votre smartphone efficacement. Nous traitons des paramètres de base, des applications utiles pour les voyages, la santé et la communication. Vous découvrirez comment personnaliser vos appareils et quelles fonctionnalités peuvent vous faciliter la vie."
+      }
+    }
+  },
+  "TrainingCycle": {
+    "heading1": "Un système, un cycle.",
+    "heading2": "Application individuelle.",
+    "mentoring": "Mentorat",
+    "status": "INDEE: 369.A — EN DÉVELOPPEMENT",
+    "durationLabel": "Durée",
+    "stages": {
+      "0": { "title": "Voir & Comprendre", "subtitle": "SYSTÈMES CLÉS" },
+      "1": { "title": "Appliquer Ensemble", "subtitle": "PHASE ACTUELLE" },
+      "2": { "title": "Consolider le Savoir", "subtitle": "VALIDATION" },
+      "3": { "title": "Approfondir le Savoir", "subtitle": "APPROFONDISSEMENT" }
+    },
+    "pathways": {
+      "0": {
+        "title": "Automatisez tout ce que vous ne voulez plus faire vous-même",
+        "description": "Apprenez comment une petite armée d'agents IA peut trier vos emails, coordonner vos rendez-vous ou faire des recherches — pour que vous puissiez vous concentrer sur ce qui compte vraiment.",
+        "duration": "40 Heures",
+        "metricLabel": "NIVEAU",
+        "metricValue": "Avancé"
+      },
+      "1": {
+        "title": "De zéro à expert",
+        "description": "Un programme d'apprentissage individualisé adapté à vos besoins, pour vous accompagner des bases jusqu'à l'expertise dans un sujet IT de votre choix.",
+        "duration": "Ouvert",
+        "metricLabel": "NIVEAU",
+        "metricValue": "Débutant"
+      },
+      "2": {
+        "title": "Atelier n8n : Automatiser sans code",
+        "description": "Dans cet atelier pratique, vous apprendrez à utiliser n8n, un puissant outil d'automatisation no-code, pour créer des workflows complexes qui optimisent et automatisent vos tâches quotidiennes.",
+        "duration": "60 Heures",
+        "metricLabel": "STATUT",
+        "metricValue": "En développement"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Prenons contact",
+    "subtitle": "Comment puis-je vous aider ? Choisissez votre domaine ci-dessous.",
+    "tabCoding": "Projet de développement",
+    "tabTraining": "Formation / Mentorat",
+    "labelName": "Nom",
+    "labelEmail": "Email",
+    "labelExperience": "Connaissances préalables",
+    "labelPhone": "Téléphone (optionnel)",
+    "labelMessage": "Message",
+    "placeholderName": "Jean Dupont",
+    "placeholderEmail": "jean@exemple.com",
+    "placeholderPhone": "Pour les rappels",
+    "placeholderMessage": "Votre message...",
+    "experiencePlaceholder": "Veuillez sélectionner...",
+    "experienceBeginner": "Débutant / Aucune expérience",
+    "experienceIntermediate": "Quelques connaissances de base",
+    "submitButton": "Envoyer le message",
+    "successMessage": "Email envoyé avec succès !",
+    "errorMessage": "Erreur lors de l'envoi."
+  },
+  "Footer": {
+    "impressum": "Mentions légales"
+  }
+}

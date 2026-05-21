@@ -6,7 +6,7 @@ import {
   Copyright,
   Landmark
 } from 'lucide-react';
-import Navbar from '../components/Navbar';
+import Navbar from '@/app/components/Navbar';
 
 export default function App() {
   return (

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\a\\\\apps\\\\code_und_co\\\\React\\\\Next\\\\Portfolio\\\\my-tool-school\" -Name \"*.ts\" -File)",
+      "Bash(Select-String \"proxy\")",
+      "Bash(pnpm run *)",
+      "Bash(cd \"c:\\\\Users\\\\a\\\\apps\\\\code_und_co\\\\React\\\\Next\\\\Portfolio\\\\my-tool-school\" && mv \"app/Impressum/page.tsx\" \"app/[locale]/Impressum/page.tsx\")",
+      "Bash(mkdir -p \"c:\\\\Users\\\\a\\\\apps\\\\code_und_co\\\\React\\\\Next\\\\Portfolio\\\\my-tool-school\\\\app\\\\[locale]\\\\Impressum\")",
+      "Bash(mv \"c:\\\\Users\\\\a\\\\apps\\\\code_und_co\\\\React\\\\Next\\\\Portfolio\\\\my-tool-school\\\\app\\\\Impressum\\\\page.tsx\" \"c:\\\\Users\\\\a\\\\apps\\\\code_und_co\\\\React\\\\Next\\\\Portfolio\\\\my-tool-school\\\\app\\\\[locale]\\\\Impressum\\\\page.tsx\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\a\\apps\\code_und_co\\React\\Next\\Portfolio\\my-tool-school\\app\\[locale]\\Impressum"
+    ]
+  }
+}

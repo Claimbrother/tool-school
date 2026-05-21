@@ -1,0 +1,72 @@
+[
+  {
+    "id": "course-101",
+    "number": "01",
+    "moduleCode": "MOD.AI // 101",
+    "theme": {
+      "color": "text-[#00f0ff]",
+      "bg": "bg-[#00f0ff]/10",
+      "border": "border-[#00f0ff]/20",
+      "glowBg": "from-purple-600/30 via-transparent to-[#00f0ff]/30",
+      "glowBorder": "from-purple-500/20 via-white/5 to-[#00f0ff]/30"
+    },
+    "title": "KI im Alltag verstehen",
+    "description": "Grundlagen von ChatGPT und Gemini für den sicheren Alltagseinsatz. Entmystifizierung generativer künstlicher Intelligenz. Lernen Sie, wie Sie moderne Sprachmodelle als effiziente Assistenten nutzen, Prompts präzise formulieren und die Ergebnisse kritisch bewerten.",
+    "format": "1:1 Session",
+    "duration": "120 Minuten",
+    "level": "Grundlagen",
+    "availability": "Sofort",
+    "curriculum": [
+      { "time": "0 - 30m", "title": "Die Mechanik hinter der KI", "description": "Verständliche Erklärung von LLMs, Training und Funktionsweise ohne technischen Jargon." },
+      { "time": "30 - 60m", "title": "Prompt Engineering Basics", "description": "Strukturierung effektiver Anweisungen. Wie Kontext, Rolle und Formatvorgaben die Ergebnisse drastisch verbessern." },
+      { "time": "60 - 90m", "title": "Use Cases & Hands-On", "description": "Gemeinsame Erstellung von Vorlagen für E-Mails, Textzusammenfassungen und kreatives Brainstorming." },
+      { "time": "90 - 120m", "title": "Sicherheit & Limitierungen", "description": "Halluzinationen erkennen, Datenschutzaspekte bei der Eingabe und kritische Quellenbewertung." }
+    ],
+    "outcomes": [
+      "Sichere Navigation in gängigen KI-Interfaces (ChatGPT, Gemini)",
+      "Fähigkeit, komplexe Aufgaben in iterative Prompts zu zerlegen",
+      "Verständnis für den sicheren Umgang mit sensiblen Daten",
+      "Erkennung von KI-generierten Falschinformationen",
+      "Einrichtung personalisierter System-Prompts"
+    ]
+  },
+  {
+    "id": "course-204",
+    "number": "02",
+    "moduleCode": "MOD.AI // 102",
+    "theme": {
+      "color": "text-[#ff003c]",
+      "bg": "bg-[#ff003c]/10",
+      "border": "border-[#ff003c]/20",
+      "glowBg": "from-[#00f0ff]/20 via-transparent to-[#ff003c]/20",
+      "glowBorder": "from-[#00f0ff]/30 via-white/5 to-[#ffcc00]/40"
+    },
+    "title": "KI sicher im Unternehmen einsetzen",
+    "description": "Nur wenn ihre Mitarbeiter KI-Tools kompetent und sicher nutzen können, entfalten diese ihr volles Potenzial. In diesem praxisorientierten Workshop lernen Ihre Teams, wie sie KI-gestützte Anwendungen effektiv in ihren Arbeitsalltag integrieren und dabei Datenschutz sowie ethische Richtlinien einhalten.",
+    "format": "Gruppen-Workshop",
+    "duration": "120 Minuten",
+    "level": "Grundlagen+",
+    "availability": "Auf Anfrage",
+    "curriculum": [
+      { "time": "0 - 20m", 
+      "title": "Was kann welches KI-Tool am besten und warum?", 
+      "description": "Wir lernen gemeinsam, wie wir Aufgaben intuitiv an die passenden KI-Tools abzugeben." },
+      { "time": "20 - 50m", 
+      "title": "KI-Tools nutzen und dabei sicher fühlen", 
+      "description": "Was können wir tun um ein Bestmögliches ergebnis mit möglichst wenig nachbesserungsbedarf zu erzielen?" },
+      { "time": "50 - 90m", 
+      "title": "Woran erkenne ich, ob die KI eine vertrauenswürdige Antwort generiert hat?", 
+      "description": "Schlechte Antworten erkennen und kritisch bewerten. Durch die Reflektion des eigenen wissens über das Thema." },
+      { "time": "90 - 120m", 
+      "title": "KI-Tools als Effizienz-Booster im Arbeitsalltag",
+      "description": "Frage runde und Strategien zur Integration von KI-Tools in den täglichen Arbeitsablauf und Optimierung der Produktivität." }
+    ],
+    "outcomes": [
+      "Sicherer Umgang mit gängigen KI-Tools im Arbeitsalltag",
+      "Verständnis für Datenschutz und Richtlinien bei der KI-Nutzung",
+      "Kritische Bewertung von KI-generierten Inhalten",
+      "Deutlich erhöhte Effizienz durch gezielten KI-Einsatz",
+      "Bewusstsein für ethische Aspekte der KI-Anwendung"
+    ]
+  }
+]

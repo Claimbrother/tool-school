@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer/page";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import Footer from "@/app/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,14 +20,19 @@ export const metadata: Metadata = {
   description: "Willkommen auf meinem Portfolio! Hier findest du eine Auswahl meiner Projekte, Schulungen und mehr über mich als Full-Stack Developer.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
-<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang={locale}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <style>{`
           .arc-container {
             position: fixed;
@@ -108,8 +115,10 @@ export default function RootLayout({
           <div className="arc-core-2"></div>
           <div className="arc-highlight"></div>
         </div>
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

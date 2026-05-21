@@ -1,0 +1,72 @@
+[
+  {
+    "id": "course-101",
+    "number": "01",
+    "moduleCode": "MOD.AI // 101",
+    "theme": {
+      "color": "text-[#00f0ff]",
+      "bg": "bg-[#00f0ff]/10",
+      "border": "border-[#00f0ff]/20",
+      "glowBg": "from-purple-600/30 via-transparent to-[#00f0ff]/30",
+      "glowBorder": "from-purple-500/20 via-white/5 to-[#00f0ff]/30"
+    },
+    "title": "Understanding AI in Everyday Life",
+    "description": "Fundamentals of ChatGPT and Gemini for safe everyday use. Demystifying generative artificial intelligence. Learn how to use modern language models as efficient assistants, formulate precise prompts, and critically evaluate the results.",
+    "format": "1:1 Session",
+    "duration": "120 minutes",
+    "level": "Fundamentals",
+    "availability": "Immediately",
+    "curriculum": [
+      { "time": "0 - 30m", "title": "The Mechanics Behind AI", "description": "A clear explanation of LLMs, training, and how they work — without technical jargon." },
+      { "time": "30 - 60m", "title": "Prompt Engineering Basics", "description": "Structuring effective instructions. How context, role, and formatting dramatically improve results." },
+      { "time": "60 - 90m", "title": "Use Cases & Hands-On", "description": "Collaborative creation of templates for emails, text summaries, and creative brainstorming." },
+      { "time": "90 - 120m", "title": "Security & Limitations", "description": "Recognising hallucinations, data privacy when entering information, and critical source evaluation." }
+    ],
+    "outcomes": [
+      "Confident navigation of common AI interfaces (ChatGPT, Gemini)",
+      "Ability to break down complex tasks into iterative prompts",
+      "Understanding of safe handling of sensitive data",
+      "Recognition of AI-generated misinformation",
+      "Setting up personalised system prompts"
+    ]
+  },
+  {
+    "id": "course-204",
+    "number": "02",
+    "moduleCode": "MOD.AI // 102",
+    "theme": {
+      "color": "text-[#ff003c]",
+      "bg": "bg-[#ff003c]/10",
+      "border": "border-[#ff003c]/20",
+      "glowBg": "from-[#00f0ff]/20 via-transparent to-[#ff003c]/20",
+      "glowBorder": "from-[#00f0ff]/30 via-white/5 to-[#ffcc00]/40"
+    },
+    "title": "Using AI Safely in the Workplace",
+    "description": "Only when your employees can use AI tools competently and safely will they unlock their full potential. In this hands-on workshop your teams learn how to effectively integrate AI-powered applications into their daily work while complying with data protection and ethical guidelines.",
+    "format": "Group Workshop",
+    "duration": "120 minutes",
+    "level": "Fundamentals+",
+    "availability": "On request",
+    "curriculum": [
+      { "time": "0 - 20m",
+      "title": "Which AI tool is best at what, and why?",
+      "description": "We learn together how to intuitively delegate tasks to the right AI tools." },
+      { "time": "20 - 50m",
+      "title": "Using AI tools and feeling confident doing it",
+      "description": "What can we do to achieve the best possible result with as little rework as possible?" },
+      { "time": "50 - 90m",
+      "title": "How do I know if the AI has generated a trustworthy answer?",
+      "description": "Recognising and critically evaluating poor answers — by reflecting on your own knowledge of the topic." },
+      { "time": "90 - 120m",
+      "title": "AI tools as efficiency boosters in the workplace",
+      "description": "Q&A round and strategies for integrating AI tools into daily workflows and optimising productivity." }
+    ],
+    "outcomes": [
+      "Confident use of common AI tools in daily work",
+      "Understanding of data protection and guidelines when using AI",
+      "Critical evaluation of AI-generated content",
+      "Significantly increased efficiency through targeted AI use",
+      "Awareness of the ethical aspects of AI applications"
+    ]
+  }
+]
